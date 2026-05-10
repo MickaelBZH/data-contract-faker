@@ -1,10 +1,8 @@
 # datacontract-faker
 
-> Synthetic data that actually matches your contract — straight from `schema.yaml`.
-
-[![CI](https://img.shields.io/github/actions/workflow/status/your-org/datacontract-faker/ci.yml?branch=main&label=CI&logo=github)](https://github.com/your-org/datacontract-faker/actions)
-[![PyPI](https://img.shields.io/pypi/v/datacontract-faker?logo=pypi&logoColor=white)](https://pypi.org/project/datacontract-faker)
-[![Python](https://img.shields.io/pypi/pyversions/datacontract-faker?logo=python&logoColor=white)](https://pypi.org/project/datacontract-faker)
+[![CI](https://img.shields.io/github/actions/workflow/status/MickaelBZH/data-contract-faker/ci.yml?branch=main&label=CI&logo=github)](https://github.com/MickaelBZH/data-contract-faker/actions)
+[![PyPI](https://img.shields.io/pypi/v/datacontract-faker?logo=pypi&logoColor=white)](https://pypi.org/project/datacontract-faker/)
+[![Python](https://img.shields.io/pypi/pyversions/datacontract-faker?logo=python&logoColor=white)](https://pypi.org/project/datacontract-faker/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
@@ -12,14 +10,6 @@
 
 ```bash
 datacontract-faker generate orders.yaml -r 50000 -o data/orders.parquet -f parquet
-```
-
-```text
-Parsing contract: orders.yaml
-✓ Contract valid — 2 model(s): orders, customers
-Generating 50,000 row(s) …
-✓ customers → data/orders_customers.parquet
-✓ orders    → data/orders_orders.parquet
 ```
 
 ---
