@@ -1,0 +1,804 @@
+# ============================================================
+# ODCS v3.1.0 — E-commerce Orders Platform
+# ============================================================
+# Demonstrates: all 9 logicalTypes, every string format,
+# nested objects (shipping_address, payment_method),
+# arrays of objects (line_items, consent_records) and scalars (tags),
+# all four quality rule types (library, sql, custom, text),
+# all quality dimensions and operators,
+# PII classification, encryption hints, primary/foreign keys,
+# transform lineage, partitioning, teams, roles, SLA, and servers.
+# ============================================================
+
+apiVersion: v3.1.0
+kind: DataContract
+id: ecommerce-orders-v2
+version: "2.4.0"
+status: active
+name: E-Commerce Orders Platform
+domain: commerce
+tenant: retail-division
+tags: [ecommerce, orders, pii, gdpr-scope, revenue-critical]
+contractCreatedTs: "2024-11-15T09:00:00Z"
+
+description:
+  purpose: >
+    Provides a comprehensive view of customer orders including line items,
+    shipping details, and tokenised payment metadata. Primary source for
+    revenue reporting, fulfilment operations, and customer-360 initiatives.
+  limitations: >
+    Cancelled orders prior to 2019-01-01 are excluded from the pipeline.
+    Payment tokens are stored in vault-encrypted form; raw card data is
+    never present. Rows in deleted_at IS NOT NULL are soft-deleted and
+    excluded from default views.
+  usage: >
+    Approved uses: BI dashboards, demand forecasting, funnel analysis,
+    customer-lifetime-value models, and GDPR compliance reporting.
+
+servers:
+  - server: prod-snowflake
+    type: snowflake
+    environment: prod
+    description: Primary production data warehouse (AWS us-east-1)
+    account: mycompany.us-east-1
+    database: COMMERCE_DB
+    schema: ORDERS
+    roles:
+      - role: analyst
+        access: read
+      - role: data-engineer
+        access: read-write
+
+  - server: staging-postgres
+    type: postgresql
+    environment: preprod
+    description: Staging replica used for integration and contract tests
+    host: postgres-staging.internal
+    port: 5432
+    database: commerce_staging
+    schema: orders
+
+team:
+  name: Commerce Data Platform
+  members:
+    - username: jsmith
+      name: Jane Smith
+      role: Data Product Owner
+      dateIn: "2022-03-01"
+    - username: klee
+      name: Kevin Lee
+      role: Lead Data Engineer
+      dateIn: "2021-07-15"
+    - username: apoirier
+      name: Alice Poirier
+      role: Data Quality Analyst
+      dateIn: "2023-01-10"
+
+roles:
+  - role: analyst
+    description: Read-only access for BI and analytics consumers
+    access: read
+    firstLevelApprovers: data-governance-board
+  - role: data-engineer
+    description: Full read-write for the Commerce data platform team
+    access: read-write
+    firstLevelApprovers: commerce-team-lead
+    secondLevelApprovers: data-governance-board
+  - role: compliance-auditor
+    description: Restricted read of PII fields for legal and audit purposes
+    access: read
+    firstLevelApprovers: legal-department
+
+slaProperties:
+  - property: latency
+    value: 30
+    unit: minutes
+    description: Orders must land in the warehouse within 30 min of placement.
+  - property: completeness
+    value: 99.9
+    unit: percent
+  - property: freshness
+    value: 1
+    unit: hours
+  - property: retention
+    value: 7
+    unit: years
+    description: Regulatory requirement under EU VAT directive.
+
+authoritativeDefinitions:
+  - url: https://wiki.company.internal/data-glossary/order
+    type: businessDefinition
+  - url: https://github.com/company/dbt-commerce/blob/main/models/fct_orders.sql
+    type: transformationImplementation
+
+customProperties:
+  - property: dataProductId
+    value: dp-commerce-orders-002
+  - property: slackChannel
+    value: "#team-data-commerce"
+  - property: gdprRegister
+    value: GDPR-REG-0042
+  - property: tier
+    value: gold
+
+# ============================================================
+# Schema
+# ============================================================
+schema:
+
+  # ----------------------------------------------------------
+  # orders — one row per customer order lifecycle event
+  # ----------------------------------------------------------
+  - name: orders
+    logicalType: object
+    physicalName: FCT_ORDERS
+    description: Core order fact table — one row per unique order.
+    businessName: Customer Orders
+    tags: [pii, critical-path, revenue]
+    authoritativeDefinitions:
+      - url: https://wiki.company.internal/data-glossary/order
+        type: businessDefinition
+    quality:
+      # Library rule: row count must be non-zero
+      - name: orders_must_exist
+        type: library
+        metric: rowCount
+        dimension: coverage
+        severity: error
+        businessImpact: operational
+        mustBeGreaterThan: 0
+        schedule: "0 */6 * * *"
+        scheduler: cron
+
+      # Library rule: no duplicate primary keys
+      - name: orders_no_duplicate_ids
+        type: library
+        metric: duplicateValues
+        dimension: uniqueness
+        severity: error
+        businessImpact: operational
+        mustBe: 0
+
+      # SQL rule: total_amount must equal the sum of its components
+      - name: total_amount_additive_consistency
+        type: sql
+        query: >
+          SELECT COUNT(*)
+          FROM orders
+          WHERE ABS(total_amount - (subtotal_amount + tax_amount + shipping_amount)) > 0.01
+        dimension: consistency
+        severity: error
+        businessImpact: operational
+        mustBe: 0
+
+      # Text rule: descriptive SLA expectation (not machine-executed)
+      - name: freshness_expectation
+        type: text
+        description: >
+          The orders table must be refreshed within 30 minutes of each new
+          order event emitted by the transactional system. Monitored via the
+          MAX(created_at) watermark check in the observability dashboard.
+        dimension: timeliness
+        severity: warning
+
+    properties:
+
+      # --- Identifiers -----------------------------------------
+
+      - name: order_id
+        logicalType: string
+        format: uuid              # string sub-type: UUID v4
+        physicalName: ORDER_ID
+        physicalType: varchar(36)
+        description: Globally unique order identifier (UUID v4).
+        businessName: Order ID
+        primaryKey: true
+        primaryKeyPosition: 1
+        required: true
+        unique: true
+        criticalDataElement: true
+        classification: public
+        quality:
+          - name: order_id_not_null
+            type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+          - name: order_id_no_duplicates
+            type: library
+            metric: duplicateValues
+            dimension: uniqueness
+            severity: error
+            mustBe: 0
+
+      - name: customer_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        description: Foreign key to the customers dimension.
+        required: true
+        criticalDataElement: true
+        classification: restricted
+        relationships:
+          - type: foreignKey
+            to: customers.customer_id
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      # --- Status & classification fields ----------------------
+
+      - name: status
+        logicalType: string
+        physicalType: varchar(20)
+        description: Current lifecycle state of the order.
+        required: true
+        examples:
+          - pending
+          - confirmed
+          - processing
+          - shipped
+          - delivered
+          - cancelled
+          - refunded
+        quality:
+          - name: status_valid_values
+            type: library
+            metric: invalidValues
+            dimension: conformity
+            severity: error
+            mustBe: 0
+          # SQL rule illustrating mustNotBeBetween (row count outside tolerance)
+          - name: refunded_ratio_sanity
+            type: sql
+            query: >
+              SELECT ROUND(100.0 * SUM(CASE WHEN status = 'refunded' THEN 1 ELSE 0 END)
+                     / NULLIF(COUNT(*), 0), 2)
+              FROM orders
+            dimension: accuracy
+            severity: warning
+            businessImpact: operational
+            mustNotBeBetween: [30, 100]   # alert if refund rate exceeds 30 %
+
+      - name: currency
+        logicalType: string
+        physicalType: char(3)
+        description: ISO 4217 three-letter currency code.
+        required: true
+        minLength: 3
+        maxLength: 3
+        pattern: "^[A-Z]{3}$"
+        examples: [USD, EUR, GBP, JPY, CAD, AUD, CHF, SGD, NOK, SEK]
+
+      # --- Monetary amounts ------------------------------------
+
+      - name: subtotal_amount
+        logicalType: number
+        format: f64               # double-precision float
+        physicalType: decimal(15,4)
+        description: Sum of all line-item amounts before tax and shipping.
+        required: true
+        minimum: 0.00
+        criticalDataElement: true
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: tax_amount
+        logicalType: number
+        format: f64
+        physicalType: decimal(15,4)
+        required: true
+        minimum: 0.00
+
+      - name: shipping_amount
+        logicalType: number
+        format: f64
+        physicalType: decimal(15,4)
+        required: true
+        minimum: 0.00
+
+      - name: total_amount
+        logicalType: number
+        format: f64
+        physicalType: decimal(15,4)
+        description: Final charged amount (subtotal + tax + shipping).
+        required: true
+        minimum: 0.01
+        criticalDataElement: true
+        transformSourceObjects:
+          - orders.subtotal_amount
+          - orders.tax_amount
+          - orders.shipping_amount
+        transformLogic: "subtotal_amount + tax_amount + shipping_amount"
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: item_count
+        logicalType: integer
+        format: i32               # 32-bit signed integer
+        physicalType: int
+        description: Number of distinct line items in the order.
+        required: true
+        minimum: 1
+        maximum: 500
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      # --- Boolean flags ---------------------------------------
+
+      - name: is_gift
+        logicalType: boolean
+        physicalType: boolean
+        description: Whether the customer requested gift packaging.
+        required: true
+
+      # --- Nested object: shipping_address ---------------------
+
+      - name: shipping_address
+        logicalType: object
+        description: Postal delivery address for this order.
+        required: true
+        properties:
+          - name: line1
+            logicalType: string
+            physicalType: varchar(255)
+            description: Primary street address line.
+            required: true
+            minLength: 1
+            maxLength: 255
+          - name: line2
+            logicalType: string
+            physicalType: varchar(255)
+            description: Apartment, suite, building number, etc.
+            required: false
+            maxLength: 255
+          - name: city
+            logicalType: string
+            physicalType: varchar(100)
+            required: true
+            maxLength: 100
+          - name: state_province
+            logicalType: string
+            physicalType: varchar(100)
+            description: State, province, or region code.
+            required: false
+          - name: postal_code
+            logicalType: string
+            physicalType: varchar(20)
+            required: true
+            minLength: 2
+            maxLength: 20
+          - name: country_code
+            logicalType: string
+            physicalType: char(2)
+            description: ISO 3166-1 alpha-2 two-letter country code.
+            required: true
+            minLength: 2
+            maxLength: 2
+            pattern: "^[A-Z]{2}$"
+            examples: [US, GB, DE, FR, JP, CA, AU, NL, SE, CH, SG, IN, BR, ZA]
+
+      # --- Array of objects: line_items ------------------------
+
+      - name: line_items
+        logicalType: array
+        description: Individual product lines within the order. At least one required.
+        required: true
+        minItems: 1
+        maxItems: 500
+        items:                    # SchemaItemProperty — no `name` at this level
+          logicalType: object
+          properties:
+            - name: line_item_id
+              logicalType: string
+              format: uuid
+              required: true
+              unique: true
+            - name: product_id
+              logicalType: string
+              format: uuid
+              required: true
+            - name: product_name
+              logicalType: string
+              physicalType: varchar(500)
+              required: true
+              maxLength: 500
+            - name: sku
+              logicalType: string
+              physicalType: varchar(100)
+              required: true
+              pattern: "^[A-Z0-9\\-]{3,50}$"
+              description: Warehouse stock-keeping unit identifier.
+            - name: quantity
+              logicalType: integer
+              format: i32
+              required: true
+              minimum: 1
+              maximum: 9999
+            - name: unit_price
+              logicalType: number
+              format: f64
+              physicalType: decimal(15,4)
+              required: true
+              minimum: 0.00
+            - name: discount_percent
+              logicalType: number
+              format: f64
+              physicalType: decimal(5,2)
+              description: Promotional discount as a percentage (0–100).
+              required: false
+              minimum: 0.00
+              maximum: 100.00
+            - name: line_total
+              logicalType: number
+              format: f64
+              physicalType: decimal(15,4)
+              description: quantity × unit_price × (1 - discount_percent/100).
+              required: true
+              minimum: 0.00
+
+      # --- Nested object: payment_method (PCI-scoped) ----------
+
+      - name: payment_method
+        logicalType: object
+        description: >
+          Payment instrument used for this order.
+          All PCI-scoped fields (last_four, token) are tokenised.
+        required: false
+        properties:
+          - name: type
+            logicalType: string
+            physicalType: varchar(30)
+            required: true
+            examples:
+              - credit_card
+              - debit_card
+              - paypal
+              - bank_transfer
+              - crypto
+              - buy_now_pay_later
+          - name: provider
+            logicalType: string
+            physicalType: varchar(50)
+            required: false
+            examples: [visa, mastercard, amex, paypal, stripe, square, klarna, afterpay]
+          - name: last_four
+            logicalType: string
+            physicalType: char(4)
+            description: Last four digits of the card number — masked for PCI compliance.
+            required: false
+            pattern: "^[0-9]{4}$"
+            classification: confidential
+          - name: token
+            logicalType: string
+            physicalType: varchar(255)
+            description: Payment-vault tokenised reference. Never contains raw card data.
+            required: false
+            classification: confidential
+            encryptedName: payment_token_enc
+
+      # --- Network / device context ----------------------------
+
+      - name: channel
+        logicalType: string
+        physicalType: varchar(30)
+        description: Sales channel through which the order was placed.
+        required: false
+        examples: [web, ios_app, android_app, pos, phone, marketplace, social]
+
+      - name: referrer_url
+        logicalType: string
+        format: uri               # string sub-type: URI
+        physicalType: varchar(2048)
+        description: Marketing referrer URL at order-creation time.
+        required: false
+
+      - name: ip_address
+        logicalType: string
+        format: ipv4              # string sub-type: IPv4
+        physicalType: varchar(15)
+        description: IPv4 address of the client device at checkout.
+        required: false
+        classification: restricted
+
+      - name: client_hostname
+        logicalType: string
+        format: hostname          # string sub-type: hostname
+        physicalType: varchar(253)
+        description: Reverse-DNS hostname of the client, if available.
+        required: false
+        classification: restricted
+
+      - name: device_fingerprint
+        logicalType: string
+        format: byte              # string sub-type: opaque bytes as hex
+        physicalType: varchar(128)
+        description: Hashed device fingerprint for fraud detection.
+        required: false
+        classification: confidential
+
+      # --- Array of scalars: tags ------------------------------
+
+      - name: tags
+        logicalType: array
+        description: Operator-assigned classification labels for routing and analytics.
+        required: false
+        minItems: 0
+        maxItems: 20
+        uniqueItems: true
+        items:
+          logicalType: string    # scalar items — no `name`
+
+      # --- Temporal fields (with partitioning) -----------------
+
+      - name: created_at
+        logicalType: timestamp
+        physicalName: CREATED_AT
+        description: UTC timestamp when the order record was first persisted.
+        required: true
+        partitioned: true
+        partitionKeyPosition: 1
+        criticalDataElement: true
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: updated_at
+        logicalType: timestamp
+        description: UTC timestamp of the last mutation to this row.
+        required: true
+
+      - name: shipped_at
+        logicalType: timestamp
+        description: UTC timestamp when the order was dispatched to the carrier.
+        required: false
+
+      - name: delivered_at
+        logicalType: timestamp
+        description: UTC timestamp of confirmed last-mile delivery.
+        required: false
+        minimum: "2015-01-01T00:00:00Z"   # sanity lower bound
+
+    # Schema-level foreign-key declaration
+    relationships:
+      - type: foreignKey
+        from: orders.customer_id
+        to: customers.customer_id
+
+  # ----------------------------------------------------------
+  # customers — registered customer accounts (PII-heavy)
+  # ----------------------------------------------------------
+  - name: customers
+    logicalType: object
+    physicalName: DIM_CUSTOMERS
+    description: Registered customer master data with GDPR-classified PII.
+    businessName: Customer Master
+    tags: [pii, gdpr, critical]
+    quality:
+      - name: no_duplicate_emails
+        type: library
+        metric: duplicateValues
+        dimension: uniqueness
+        severity: error
+        mustBe: 0
+
+      - name: email_format_check
+        type: custom
+        engine: great-expectations
+        implementation:
+          expectation_type: expect_column_values_to_match_regex
+          kwargs:
+            column: email
+            regex: "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+        dimension: conformity
+        severity: warning
+
+      - name: lifetime_spend_non_negative
+        type: sql
+        query: "SELECT COUNT(*) FROM customers WHERE lifetime_spend < 0"
+        dimension: accuracy
+        severity: error
+        mustBe: 0
+
+    properties:
+
+      - name: customer_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        primaryKey: true
+        primaryKeyPosition: 1
+        required: true
+        unique: true
+        criticalDataElement: true
+        classification: public
+
+      - name: email
+        logicalType: string
+        format: email             # string sub-type: RFC 5321 email address
+        physicalType: varchar(254)
+        description: Primary authentication and contact address. GDPR personal data.
+        required: true
+        unique: true
+        criticalDataElement: true
+        classification: confidential
+        encryptedName: email_enc
+        maxLength: 254
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: first_name
+        logicalType: string
+        physicalType: varchar(100)
+        required: false
+        classification: restricted
+        maxLength: 100
+
+      - name: last_name
+        logicalType: string
+        physicalType: varchar(100)
+        required: false
+        classification: restricted
+        maxLength: 100
+
+      - name: phone_number
+        logicalType: string
+        physicalType: varchar(30)
+        description: E.164-format international phone number.
+        required: false
+        pattern: "^\\+[1-9]\\d{6,14}$"
+        classification: restricted
+        encryptedName: phone_number_enc
+
+      - name: date_of_birth
+        logicalType: date
+        description: >
+          Customer date of birth used for age-gating and personalisation.
+          Platform requires minimum age of 18.
+        required: false
+        maximum: "2008-01-01"
+        classification: confidential
+        encryptedName: date_of_birth_enc
+        criticalDataElement: true
+
+      - name: profile_picture_url
+        logicalType: string
+        format: uri
+        physicalType: varchar(2048)
+        required: false
+
+      - name: locale
+        logicalType: string
+        physicalType: varchar(10)
+        description: BCP 47 locale tag for localisation preferences.
+        required: false
+        pattern: "^[a-z]{2}_[A-Z]{2}$"
+        examples: [en_US, en_GB, de_DE, fr_FR, ja_JP, es_ES, pt_BR, zh_CN, ko_KR, nl_NL]
+
+      - name: tier
+        logicalType: string
+        physicalType: varchar(20)
+        description: Loyalty programme tier.
+        required: true
+        examples: [bronze, silver, gold, platinum]
+
+      - name: lifetime_order_count
+        logicalType: integer
+        format: i64               # 64-bit signed integer
+        physicalType: bigint
+        required: true
+        minimum: 0
+
+      - name: lifetime_spend
+        logicalType: number
+        format: f64
+        physicalType: decimal(18,4)
+        description: Cumulative amount spent across all completed orders.
+        required: true
+        minimum: 0.0
+        criticalDataElement: true
+
+      - name: is_email_verified
+        logicalType: boolean
+        required: true
+
+      - name: is_marketing_opt_in
+        logicalType: boolean
+        required: true
+
+      # --- Nested object: primary_address ----------------------
+
+      - name: primary_address
+        logicalType: object
+        description: Default billing and shipping address.
+        required: false
+        properties:
+          - name: line1
+            logicalType: string
+            physicalType: varchar(255)
+            required: false
+          - name: city
+            logicalType: string
+            physicalType: varchar(100)
+            required: false
+          - name: postal_code
+            logicalType: string
+            physicalType: varchar(20)
+            required: false
+          - name: country_code
+            logicalType: string
+            physicalType: char(2)
+            required: false
+            minLength: 2
+            maxLength: 2
+            pattern: "^[A-Z]{2}$"
+
+      # --- Array of objects: consent_records (GDPR) -----------
+
+      - name: consent_records
+        logicalType: array
+        description: Immutable audit trail of GDPR consent events.
+        required: false
+        minItems: 0
+        items:
+          logicalType: object
+          properties:
+            - name: purpose
+              logicalType: string
+              required: true
+              examples: [marketing, analytics, third_party_sharing, profiling]
+            - name: consented
+              logicalType: boolean
+              required: true
+            - name: recorded_at
+              logicalType: timestamp
+              required: true
+            - name: ip_address
+              logicalType: string
+              format: ipv4
+              required: false
+              classification: restricted
+            - name: user_agent
+              logicalType: string
+              physicalType: varchar(512)
+              required: false
+
+      - name: created_at
+        logicalType: timestamp
+        required: true
+        criticalDataElement: true
+
+      - name: last_login_at
+        logicalType: timestamp
+        required: false
+
+      - name: deleted_at
+        logicalType: timestamp
+        description: >
+          Soft-delete timestamp. NULL = active account.
+          Set on GDPR right-to-erasure requests.
+        required: false
+        classification: restricted

@@ -1,0 +1,883 @@
+# ============================================================
+# ODCS v3.1.0 — Financial Transactions Ledger
+# ============================================================
+# Demonstrates: regulatory/compliance quality rules,
+# confidential classification + encryptedName throughout,
+# all quality operators (mustBe, mustNotBe, mustBeGreaterThan,
+#   mustBeGreaterOrEqualTo, mustBeLessThan, mustBeLessOrEqualTo,
+#   mustBeBetween, mustNotBeBetween),
+# all quality dimensions,
+# SQL and custom (soda / great-expectations) quality types,
+# businessImpact: regulatory,
+# integer formats (i64, u64) and number format f64,
+# temporal bounds on date and timestamp fields,
+# IBAN/BIC patterns, nested risk_assessment object,
+# array of audit_trail events, multi-column foreign keys,
+# and strict SLA properties for a financial-grade contract.
+# ============================================================
+
+apiVersion: v3.1.0
+kind: DataContract
+id: financial-transactions-v3
+version: "3.1.0"
+status: active
+name: Financial Transactions Ledger
+domain: finance
+tenant: banking-core
+tags: [finance, transactions, pci-dss, aml, regulatory, sox]
+contractCreatedTs: "2025-01-20T08:30:00Z"
+
+description:
+  purpose: >
+    Provides the authoritative ledger of all payment transactions processed
+    through the core banking system. Used for regulatory reporting (PSD2,
+    EMIR), AML screening, reconciliation, and financial audit trails.
+  limitations: >
+    Transactions in status 'draft' are excluded from reporting views.
+    Amount fields are stored in minor currency units (cents/pence).
+    Counterparty PII is tokenised; raw IBAN values are held in a separate
+    PCI-DSS-scoped vault and referenced here by token only.
+  usage: >
+    Approved uses: regulatory reporting, AML/CFT monitoring, revenue
+    reconciliation, fraud analytics, and internal audit. Direct joins to
+    PCI-scoped systems require written approval from the CISO office.
+
+servers:
+  - server: prod-db2
+    type: db2
+    environment: prod
+    description: Core banking DB2 instance (on-premises, Frankfurt DC)
+    host: db2-core.banking.internal
+    port: 50000
+    database: FINLEDGER
+    roles:
+      - role: compliance-reader
+        access: read
+      - role: reconciliation-service
+        access: read-write
+
+  - server: prod-bigquery
+    type: bigquery
+    environment: prod
+    description: Analytics replica in Google BigQuery (EU region)
+    project: mycompany-data-prod
+    dataset: financial_transactions
+    roles:
+      - role: analyst
+        access: read
+
+team:
+  name: Financial Data Platform
+  members:
+    - username: rdelacroix
+      name: Rémi Delacroix
+      role: Data Product Owner
+      dateIn: "2020-05-01"
+    - username: hwang
+      name: Helen Wang
+      role: Senior Data Engineer
+      dateIn: "2021-09-15"
+    - username: fcalvet
+      name: François Calvet
+      role: Compliance Data Analyst
+      dateIn: "2022-02-01"
+
+roles:
+  - role: analyst
+    description: Read access for finance BI analysts (anonymised views only)
+    access: read
+    firstLevelApprovers: data-governance-board
+  - role: compliance-reader
+    description: Read access to full dataset for compliance and audit teams
+    access: read
+    firstLevelApprovers: chief-compliance-officer
+    secondLevelApprovers: ciso
+  - role: reconciliation-service
+    description: Service-account read-write for the automated reconciliation pipeline
+    access: read-write
+    firstLevelApprovers: platform-engineering-lead
+
+slaProperties:
+  - property: latency
+    value: 5
+    unit: minutes
+    description: Transactions must be available for AML screening within 5 min of booking.
+  - property: completeness
+    value: 100
+    unit: percent
+    description: Zero transaction loss is a regulatory requirement.
+  - property: availability
+    value: 99.99
+    unit: percent
+  - property: retention
+    value: 10
+    unit: years
+    description: Required by EU AML Directive 6 (AMLD6) and local banking regulations.
+
+authoritativeDefinitions:
+  - url: https://wiki.bank.internal/data-glossary/transaction
+    type: businessDefinition
+  - url: https://github.com/bank/data-platform/blob/main/models/ledger/fct_transactions.sql
+    type: transformationImplementation
+  - url: https://www.eba.europa.eu/regulation-and-policy/payment-services-and-electronic-money
+    type: tutorial
+
+customProperties:
+  - property: dataProductId
+    value: dp-finance-ledger-003
+  - property: regulatoryFramework
+    value: PSD2, AMLD6, SOX
+  - property: dpoContact
+    value: dpo@bank.example.com
+  - property: pciDssScope
+    value: "true"
+
+# ============================================================
+# Schema
+# ============================================================
+schema:
+
+  # ----------------------------------------------------------
+  # accounts — customer payment accounts
+  # ----------------------------------------------------------
+  - name: accounts
+    logicalType: object
+    physicalName: T_ACCOUNTS
+    description: >
+      Registered payment accounts. Balances are stored in minor currency
+      units (e.g. cents for EUR/USD). One row per account.
+    businessName: Payment Accounts
+    tags: [pci-dss, confidential, critical]
+    quality:
+      - name: account_row_count_sanity
+        type: library
+        metric: rowCount
+        dimension: coverage
+        severity: error
+        businessImpact: regulatory
+        mustBeGreaterThan: 0
+
+      - name: account_id_uniqueness
+        type: library
+        metric: duplicateValues
+        dimension: uniqueness
+        severity: error
+        businessImpact: regulatory
+        mustBe: 0
+
+      - name: balance_consistency
+        type: sql
+        query: >
+          SELECT COUNT(*)
+          FROM accounts a
+          WHERE a.balance_cents <>
+            (SELECT COALESCE(SUM(
+               CASE WHEN t.direction = 'credit' THEN t.amount_cents
+                    ELSE -t.amount_cents END), 0)
+             FROM transactions t
+             WHERE t.account_id = a.account_id
+               AND t.status = 'settled')
+        dimension: consistency
+        severity: warning
+        businessImpact: regulatory
+        mustBe: 0
+
+    properties:
+
+      - name: account_id
+        logicalType: string
+        format: uuid
+        physicalName: ACCOUNT_ID
+        physicalType: varchar(36)
+        description: Internal UUID for the account record.
+        primaryKey: true
+        primaryKeyPosition: 1
+        required: true
+        unique: true
+        criticalDataElement: true
+        classification: restricted
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: account_number_token
+        logicalType: string
+        physicalType: varchar(255)
+        description: >
+          Vault-tokenised representation of the account number.
+          Raw account numbers are stored only in the PCI-DSS-scoped vault.
+        required: true
+        classification: confidential
+        encryptedName: account_number_raw
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: iban_token
+        logicalType: string
+        physicalType: varchar(255)
+        description: "Vault-tokenised IBAN. Format of raw value: ISO 13616 (e.g. GB29NWBK...)."
+        required: false
+        classification: confidential
+        encryptedName: iban_raw
+
+      - name: bic_swift
+        logicalType: string
+        physicalType: varchar(11)
+        description: ISO 9362 BIC/SWIFT code of the account's institution.
+        required: false
+        minLength: 8
+        maxLength: 11
+        pattern: "^[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}([A-Z0-9]{3})?$"
+        examples: [NWBKGB2L, DEUTDEDB, BNPAFRPP, CITIUS33]
+
+      - name: currency
+        logicalType: string
+        physicalType: char(3)
+        description: ISO 4217 currency code for this account.
+        required: true
+        minLength: 3
+        maxLength: 3
+        pattern: "^[A-Z]{3}$"
+        examples: [EUR, USD, GBP, CHF, JPY, SEK, NOK, DKK, CAD, AUD]
+
+      - name: account_type
+        logicalType: string
+        physicalType: varchar(30)
+        required: true
+        examples: [current, savings, escrow, loan, credit_line, prepaid]
+
+      - name: status
+        logicalType: string
+        physicalType: varchar(20)
+        required: true
+        examples: [active, suspended, dormant, closed, frozen]
+
+      - name: balance_cents
+        logicalType: integer
+        format: i64               # 64-bit signed integer (allows negative balances)
+        physicalType: bigint
+        description: >
+          Current confirmed balance in minor currency units.
+          Negative values represent overdraft positions.
+        required: true
+        criticalDataElement: true
+        classification: confidential
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: available_balance_cents
+        logicalType: integer
+        format: i64
+        physicalType: bigint
+        description: Spendable balance excluding pending holds, in minor units.
+        required: true
+        criticalDataElement: true
+        classification: confidential
+
+      - name: credit_limit_cents
+        logicalType: integer
+        format: i64
+        physicalType: bigint
+        description: Approved credit limit in minor currency units. NULL for debit accounts.
+        required: false
+        minimum: 0
+        classification: confidential
+
+      - name: owner_customer_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        description: Foreign key to the customer who owns this account.
+        required: true
+        classification: restricted
+        criticalDataElement: true
+
+      - name: opened_at
+        logicalType: date
+        description: Date the account was opened.
+        required: true
+        minimum: "1990-01-01"
+        maximum: "2099-12-31"
+
+      - name: closed_at
+        logicalType: date
+        description: Date the account was closed. NULL indicates still active.
+        required: false
+        minimum: "1990-01-01"
+
+      - name: last_activity_at
+        logicalType: timestamp
+        description: Timestamp of the most recent debit or credit.
+        required: false
+
+  # ----------------------------------------------------------
+  # transactions — individual payment and transfer events
+  # ----------------------------------------------------------
+  - name: transactions
+    logicalType: object
+    physicalName: T_TRANSACTIONS
+    description: >
+      Immutable ledger of every payment and transfer event.
+      Amount is stored in minor currency units (cents/pence).
+      Each settled transaction produces a matching journal_entry pair.
+    businessName: Payment Transactions
+    tags: [pci-dss, aml, confidential, critical, immutable]
+    quality:
+      # rowCount must be within expected operational range
+      - name: daily_transaction_volume_sanity
+        type: library
+        metric: rowCount
+        dimension: coverage
+        severity: warning
+        businessImpact: operational
+        mustBeBetween: [1, 100000000]
+
+      # Zero duplicate transaction IDs — hard regulatory requirement
+      - name: transaction_id_uniqueness
+        type: library
+        metric: duplicateValues
+        dimension: uniqueness
+        severity: error
+        businessImpact: regulatory
+        mustBe: 0
+
+      # No null amounts — every transaction must have a value
+      - name: amount_completeness
+        type: library
+        metric: nullValues
+        dimension: completeness
+        severity: error
+        businessImpact: regulatory
+        mustBe: 0
+
+      # Missing values (NULL in non-nullable columns) must be zero
+      - name: no_missing_values
+        type: library
+        metric: missingValues
+        dimension: completeness
+        severity: error
+        businessImpact: regulatory
+        mustBe: 0
+
+      # Amount must never be zero or negative — caught at booking
+      - name: amount_positive
+        type: sql
+        query: "SELECT COUNT(*) FROM transactions WHERE amount_cents <= 0"
+        dimension: accuracy
+        severity: error
+        businessImpact: regulatory
+        mustBe: 0
+
+      # AML: flag if single-day total for one account exceeds 10k EUR (CTR threshold)
+      - name: aml_ctr_threshold_check
+        type: sql
+        query: >
+          SELECT COUNT(*)
+          FROM (
+            SELECT account_id, booking_date, SUM(amount_cents) AS daily_total
+            FROM transactions
+            WHERE status = 'settled' AND direction = 'debit'
+            GROUP BY account_id, booking_date
+          ) sub
+          WHERE daily_total >= 1000000   -- 10 000.00 EUR in cents
+        dimension: conformity
+        severity: warning
+        businessImpact: regulatory
+        mustNotBeBetween: [1, 999999999]   # any hit triggers AML review flag
+
+      # Custom Soda check for referential integrity
+      - name: account_fk_integrity
+        type: custom
+        engine: soda
+        implementation: |
+          checks for transactions:
+            - values in (account_id) must exist in accounts (account_id)
+        dimension: consistency
+        severity: error
+        businessImpact: regulatory
+
+    properties:
+
+      - name: transaction_id
+        logicalType: string
+        format: uuid
+        physicalName: TXN_ID
+        physicalType: varchar(36)
+        description: Immutable globally unique transaction identifier.
+        primaryKey: true
+        primaryKeyPosition: 1
+        required: true
+        unique: true
+        criticalDataElement: true
+        classification: restricted
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: account_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        description: Owning account for this transaction entry.
+        required: true
+        criticalDataElement: true
+        classification: restricted
+        relationships:
+          - type: foreignKey
+            to: accounts.account_id
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: external_reference
+        logicalType: string
+        physicalType: varchar(255)
+        description: Originating system's transaction reference (e.g. SEPA end-to-end ID).
+        required: false
+        maxLength: 255
+
+      - name: direction
+        logicalType: string
+        physicalType: varchar(6)
+        description: "debit: money leaves the account. credit: money enters the account."
+        required: true
+        examples: [debit, credit]
+        quality:
+          - type: library
+            metric: invalidValues
+            dimension: conformity
+            severity: error
+            mustBe: 0
+
+      - name: status
+        logicalType: string
+        physicalType: varchar(20)
+        required: true
+        examples:
+          - pending
+          - authorised
+          - settled
+          - failed
+          - reversed
+          - disputed
+
+      - name: transaction_type
+        logicalType: string
+        physicalType: varchar(50)
+        required: true
+        examples:
+          - sepa_credit_transfer
+          - sepa_direct_debit
+          - swift_wire
+          - card_payment
+          - card_refund
+          - atm_withdrawal
+          - internal_transfer
+          - fx_conversion
+          - fee
+          - interest
+
+      - name: currency
+        logicalType: string
+        physicalType: char(3)
+        required: true
+        minLength: 3
+        maxLength: 3
+        pattern: "^[A-Z]{3}$"
+        examples: [EUR, USD, GBP, CHF, JPY, SGD, CAD, AUD]
+
+      - name: amount_cents
+        logicalType: integer
+        format: u64               # unsigned 64-bit: transactions are always positive
+        physicalType: bigint
+        description: >
+          Transaction amount in minor currency units (always positive).
+          Direction (debit/credit) determines the sign on the account balance.
+        required: true
+        minimum: 1
+        criticalDataElement: true
+        classification: restricted
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: original_amount_cents
+        logicalType: integer
+        format: i64
+        physicalType: bigint
+        description: >
+          Amount in the transaction's original currency (before FX conversion).
+          Equal to amount_cents when no currency conversion occurs.
+        required: true
+        minimum: 1
+
+      - name: original_currency
+        logicalType: string
+        physicalType: char(3)
+        required: true
+        minLength: 3
+        maxLength: 3
+        pattern: "^[A-Z]{3}$"
+
+      - name: exchange_rate
+        logicalType: number
+        format: f64
+        physicalType: decimal(18,8)
+        description: FX rate applied (original_currency → account currency). 1.0 if no conversion.
+        required: true
+        minimum: 0.000001
+        maximum: 999999.0
+
+      - name: counterparty
+        logicalType: object
+        description: Details of the other party in the transaction.
+        required: false
+        properties:
+          - name: name_token
+            logicalType: string
+            physicalType: varchar(255)
+            description: Vault-tokenised counterparty full name.
+            required: false
+            classification: confidential
+            encryptedName: counterparty_name_raw
+          - name: iban_token
+            logicalType: string
+            physicalType: varchar(255)
+            description: Vault-tokenised counterparty IBAN.
+            required: false
+            classification: confidential
+            encryptedName: counterparty_iban_raw
+          - name: bic
+            logicalType: string
+            physicalType: varchar(11)
+            description: Counterparty bank BIC/SWIFT code.
+            required: false
+            minLength: 8
+            maxLength: 11
+            pattern: "^[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}([A-Z0-9]{3})?$"
+          - name: country_code
+            logicalType: string
+            physicalType: char(2)
+            description: ISO 3166-1 alpha-2 country of the counterparty bank.
+            required: false
+            minLength: 2
+            maxLength: 2
+            pattern: "^[A-Z]{2}$"
+
+      - name: risk_assessment
+        logicalType: object
+        description: Real-time AML / fraud risk scoring attached at booking time.
+        required: false
+        properties:
+          - name: risk_score
+            logicalType: number
+            format: f64
+            physicalType: decimal(5,2)
+            description: Composite risk score 0.00 (no risk) to 100.00 (highest risk).
+            required: true
+            minimum: 0.00
+            maximum: 100.00
+          - name: risk_band
+            logicalType: string
+            required: true
+            examples: [low, medium, high, critical]
+          - name: flags
+            logicalType: array
+            description: Machine-generated AML flag codes triggered by this transaction.
+            required: false
+            minItems: 0
+            maxItems: 50
+            items:
+              logicalType: string
+              examples:
+                - STRUCTURING
+                - ROUND_AMOUNT
+                - RAPID_MOVEMENT
+                - HIGH_RISK_JURISDICTION
+                - PEP_COUNTERPARTY
+                - SANCTIONS_HIT
+          - name: model_version
+            logicalType: string
+            physicalType: varchar(50)
+            description: Identifier of the ML model version that produced this score.
+            required: false
+            pattern: "^v\\d+\\.\\d+\\.\\d+$"
+          - name: scored_at
+            logicalType: timestamp
+            required: true
+
+      - name: audit_trail
+        logicalType: array
+        description: Ordered sequence of status-change events for this transaction.
+        required: true
+        minItems: 1
+        items:
+          logicalType: object
+          properties:
+            - name: event
+              logicalType: string
+              required: true
+              examples:
+                - created
+                - authorisation_requested
+                - authorised
+                - settlement_submitted
+                - settled
+                - reversal_requested
+                - reversed
+                - failed
+                - dispute_opened
+                - dispute_resolved
+            - name: occurred_at
+              logicalType: timestamp
+              required: true
+              minimum: "2010-01-01T00:00:00Z"
+            - name: actor
+              logicalType: string
+              physicalType: varchar(100)
+              description: System or human identifier that triggered this event.
+              required: true
+            - name: details
+              logicalType: string
+              physicalType: text
+              required: false
+            - name: ip_address
+              logicalType: string
+              format: ipv4
+              required: false
+              classification: restricted
+
+      - name: description
+        logicalType: string
+        physicalType: varchar(500)
+        description: Free-text narrative from the originating payment instruction.
+        required: false
+        maxLength: 500
+
+      - name: booking_date
+        logicalType: date
+        description: Calendar date the transaction was posted to the ledger.
+        required: true
+        minimum: "1990-01-01"
+        maximum: "2099-12-31"
+        partitioned: true
+        partitionKeyPosition: 1
+        criticalDataElement: true
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: value_date
+        logicalType: date
+        description: Date the funds are considered available (settlement date).
+        required: true
+        minimum: "1990-01-01"
+        maximum: "2099-12-31"
+
+      - name: created_at
+        logicalType: timestamp
+        description: UTC timestamp when this record was first written to the ledger.
+        required: true
+        minimum: "2010-01-01T00:00:00Z"
+        criticalDataElement: true
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+      - name: settled_at
+        logicalType: timestamp
+        description: UTC timestamp of final settlement confirmation.
+        required: false
+        minimum: "2010-01-01T00:00:00Z"
+
+    relationships:
+      - type: foreignKey
+        from: transactions.account_id
+        to: accounts.account_id
+
+  # ----------------------------------------------------------
+  # journal_entries — double-entry bookkeeping records
+  # ----------------------------------------------------------
+  - name: journal_entries
+    logicalType: object
+    physicalName: T_JOURNAL_ENTRIES
+    description: >
+      Double-entry bookkeeping records. Every settled transaction produces
+      exactly two matching journal entries (one debit, one credit) that
+      must net to zero within the same journal_id.
+    businessName: General Ledger Journal Entries
+    tags: [sox, finance, immutable, critical]
+    quality:
+      - name: journal_balance_check
+        type: sql
+        query: >
+          SELECT COUNT(*) FROM (
+            SELECT journal_id,
+                   SUM(CASE WHEN side = 'debit'  THEN amount_cents ELSE 0 END) AS dr,
+                   SUM(CASE WHEN side = 'credit' THEN amount_cents ELSE 0 END) AS cr
+            FROM journal_entries
+            GROUP BY journal_id
+            HAVING dr <> cr
+          ) unbalanced
+        dimension: consistency
+        severity: error
+        businessImpact: regulatory
+        mustBe: 0
+
+      - name: journal_entry_count_must_be_even
+        type: sql
+        query: "SELECT MOD(COUNT(*), 2) FROM journal_entries"
+        dimension: consistency
+        severity: error
+        businessImpact: regulatory
+        mustBe: 0
+
+    properties:
+
+      - name: journal_entry_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        primaryKey: true
+        primaryKeyPosition: 1
+        required: true
+        unique: true
+        criticalDataElement: true
+        classification: restricted
+
+      - name: journal_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        description: Groups the debit and credit legs of a single economic event.
+        required: true
+        criticalDataElement: true
+        classification: restricted
+
+      - name: transaction_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        description: Foreign key to the originating transaction.
+        required: true
+        classification: restricted
+        relationships:
+          - type: foreignKey
+            to: transactions.transaction_id
+
+      - name: account_id
+        logicalType: string
+        format: uuid
+        physicalType: varchar(36)
+        required: true
+        classification: restricted
+        relationships:
+          - type: foreignKey
+            to: accounts.account_id
+
+      - name: side
+        logicalType: string
+        physicalType: varchar(6)
+        description: Debit or credit side of this journal entry.
+        required: true
+        examples: [debit, credit]
+
+      - name: gl_account_code
+        logicalType: string
+        physicalType: varchar(20)
+        description: General ledger chart-of-accounts code.
+        required: true
+        pattern: "^[0-9]{4,8}$"
+        examples: ["10100", "20200", "30300", "40400"]
+
+      - name: amount_cents
+        logicalType: integer
+        format: u64
+        physicalType: bigint
+        description: Entry amount in minor currency units (always positive).
+        required: true
+        minimum: 1
+        criticalDataElement: true
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+          - name: amount_must_be_positive
+            type: library
+            metric: invalidValues
+            dimension: accuracy
+            severity: error
+            businessImpact: regulatory
+            mustBe: 0
+
+      - name: currency
+        logicalType: string
+        physicalType: char(3)
+        required: true
+        minLength: 3
+        maxLength: 3
+        pattern: "^[A-Z]{3}$"
+
+      - name: description
+        logicalType: string
+        physicalType: varchar(500)
+        required: false
+        maxLength: 500
+
+      - name: effective_date
+        logicalType: date
+        description: Accounting date this entry is posted to the general ledger.
+        required: true
+        minimum: "1990-01-01"
+        maximum: "2099-12-31"
+        partitioned: true
+        partitionKeyPosition: 1
+        criticalDataElement: true
+
+      - name: created_at
+        logicalType: timestamp
+        required: true
+        minimum: "2010-01-01T00:00:00Z"
+        criticalDataElement: true
+        quality:
+          - type: library
+            metric: nullValues
+            dimension: completeness
+            severity: error
+            mustBe: 0
+
+    relationships:
+      - type: foreignKey
+        from: journal_entries.transaction_id
+        to: transactions.transaction_id
+      - type: foreignKey
+        from: journal_entries.account_id
+        to: accounts.account_id

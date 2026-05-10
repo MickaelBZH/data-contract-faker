@@ -1,0 +1,103 @@
+apiVersion: v3.1.0
+kind: DataContract
+id: ecommerce-v1
+version: "1.2.0"
+status: active
+
+schema:
+  - name: orders
+    logicalType: object
+    description: Customer orders table.
+    properties:
+      - name: order_id
+        logicalType: string
+        format: uuid
+        required: true
+        unique: true
+
+      - name: customer_email
+        logicalType: string
+        format: email
+        required: true
+
+      - name: customer_name
+        logicalType: string
+        physicalType: varchar
+        required: true
+
+      - name: amount
+        logicalType: number
+        physicalType: decimal
+        required: true
+        minimum: 0.01
+        maximum: 9999.99
+
+      - name: status
+        logicalType: string
+        required: true
+        examples:
+          - pending
+          - processing
+          - shipped
+          - delivered
+          - cancelled
+
+      - name: channel
+        logicalType: string
+        required: false
+        examples:
+          - web
+          - mobile
+          - in-store
+          - marketplace
+
+      - name: created_at
+        logicalType: timestamp
+        required: true
+
+      - name: notes
+        logicalType: string
+        required: false
+
+  - name: customers
+    logicalType: object
+    description: Registered customer accounts.
+    properties:
+      - name: customer_id
+        logicalType: string
+        format: uuid
+        required: true
+        unique: true
+
+      - name: email
+        logicalType: string
+        format: email
+        required: true
+        unique: true
+
+      - name: phone
+        logicalType: string
+        format: phone
+        required: false
+
+      - name: country_code
+        logicalType: string
+        physicalType: char
+        required: true
+
+      - name: account_balance
+        logicalType: number
+        physicalType: float
+        required: true
+        minimum: 0.0
+        maximum: 100000.0
+
+      - name: is_premium
+        logicalType: boolean
+        required: true
+
+      - name: joined_date
+        logicalType: date
+        required: true
+        minimum: "2015-01-01"
+        maximum: "2024-12-31"

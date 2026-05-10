@@ -1,0 +1,4013 @@
+[
+  {
+    "customer_id": "07c4c36a-ca98-4675-8264-3eafcecf8c9a",
+    "email": "tracy78@example.net",
+    "first_name": "tLfXOgLJASTLjCCOPbiDZHqWODrpxnRgqAHyETFhvJGpoJANaZyRrFwFoQVmyKXZVAnoEnIxnQNMXPIirEvpZrYdpdfAQjUArAYH",
+    "last_name": "druwEIOzOsNSAHXIWxobJVZgBWGYIZMPCNovccLGpdhTLgUnnyxpvjxduNEvXFsQWrNDFkRoLSQdIJEzFfZPrqE",
+    "phone_number": null,
+    "date_of_birth": "1965-11-02",
+    "profile_picture_url": "http://lewis-beck.com/main/main/mainauthor.html",
+    "locale": "pt_BR",
+    "tier": "bronze",
+    "lifetime_order_count": 441850217,
+    "lifetime_spend": 32859933568448.273,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "outside",
+      "postal_code": "tonight",
+      "country_code": "GM"
+    },
+    "consent_records": null,
+    "created_at": "1975-06-11T13:58:08.479861",
+    "last_login_at": "1974-02-02T05:09:01.331008",
+    "deleted_at": "1994-08-20T15:08:58.111229"
+  },
+  {
+    "customer_id": "f6aa17c0-2f48-4301-8c9b-1bc03ee47d9c",
+    "email": "phernandez@example.org",
+    "first_name": "RFpYyqLbFezHeflbTUuQwtpSdFnZxZovKJAUGitIhproOJGqYxqpvTzFtlQx",
+    "last_name": "YWDXwfTPbnSSgtaEpXcmDomYujXbgfcmxavrAqKxHrmgjsNEdRUNGlqAkAKmppKjZMxvIRzxtvzKUFNgXWPrpMyNpOCqy",
+    "phone_number": "+81000206140",
+    "date_of_birth": "1988-09-28",
+    "profile_picture_url": "https://www.barrett-torres.com/posts/postsmain.html",
+    "locale": "zh_CN",
+    "tier": "bronze",
+    "lifetime_order_count": 264768583,
+    "lifetime_spend": 6502931276564.85,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "not",
+      "city": "miss",
+      "postal_code": "type",
+      "country_code": "HN"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1971-05-16T20:55:35.470631",
+        "ip_address": "170.71.31.20",
+        "user_agent": "can"
+      }
+    ],
+    "created_at": "2020-01-02T21:19:04.199064",
+    "last_login_at": "1993-05-10T14:44:14.335862",
+    "deleted_at": "2014-11-02T19:25:42.201192"
+  },
+  {
+    "customer_id": "180c8b6b-82e0-4508-b323-3d04de564417",
+    "email": "georgeewing@example.com",
+    "first_name": "UEskuUfLBFmZayqsKzedgNdgLtXEtEbVmHbeKCQayXgprKSCTsARNKQWMXzWbTsnjByiVBGykEIeqzcVoghn",
+    "last_name": null,
+    "phone_number": "+872752913613578",
+    "date_of_birth": null,
+    "profile_picture_url": "https://moore.biz/category/postsauthor.jsp",
+    "locale": "pt_BR",
+    "tier": "bronze",
+    "lifetime_order_count": 247600210,
+    "lifetime_spend": 41237691409802.29,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "painting",
+      "city": "PM",
+      "postal_code": "particular",
+      "country_code": "HK"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1981-04-17T23:10:57.336519",
+        "ip_address": "143.131.241.48",
+        "user_agent": "movie"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1983-05-31T05:18:11.895628",
+        "ip_address": "217.214.188.196",
+        "user_agent": "early"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1983-09-10T18:36:45.789202",
+        "ip_address": "122.15.110.93",
+        "user_agent": "push"
+      }
+    ],
+    "created_at": "1997-08-30T20:36:28.060427",
+    "last_login_at": "2006-08-21T14:52:16.738971",
+    "deleted_at": "1984-11-21T02:27:36.093320"
+  },
+  {
+    "customer_id": "66b48e4b-5324-48ee-9339-3e190f89f617",
+    "email": "william13@example.net",
+    "first_name": "hLjBDBWRIFtkFyoadmtwFKQpoMQeZvMhPHkZQPWNUIvvEGYrJeqGTilisSJcqrtzAWjoeBISwlAisRDTNvLDqCFRpQKIKFapN",
+    "last_name": "kHdAttPtgwdJGzPEbJibJOmGFDOBkIglVkegTqEniMACdmcmBUfvJPmlGhnthPeQJhtMmZZHrzFNzfGCFRgdSMulH",
+    "phone_number": "+401863399839614",
+    "date_of_birth": "2003-03-23",
+    "profile_picture_url": "http://gray.com/explore/main/tagindex.htm",
+    "locale": "es_ES",
+    "tier": "silver",
+    "lifetime_order_count": 1260828104,
+    "lifetime_spend": 80930127935770.05,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "activity",
+      "city": "game",
+      "postal_code": "year",
+      "country_code": "GS"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2020-02-02T02:57:32.003370",
+        "ip_address": "73.95.160.61",
+        "user_agent": "friend"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1992-01-24T01:38:19.004257",
+        "ip_address": "17.221.43.194",
+        "user_agent": "drive"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2007-05-18T00:35:54.167247",
+        "ip_address": "173.6.104.245",
+        "user_agent": "organization"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1970-08-12T05:13:40.869874",
+        "ip_address": null,
+        "user_agent": "accept"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2018-01-05T07:38:41.314050",
+        "ip_address": null,
+        "user_agent": "something"
+      }
+    ],
+    "created_at": "2020-11-12T06:57:43.073370",
+    "last_login_at": "1992-02-10T04:37:20.981037",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "ed24ef80-6995-473c-b273-34ac0c73d756",
+    "email": "dianawall@example.org",
+    "first_name": "huAcRjfy",
+    "last_name": "CkbXehFYBXfePChTLwNUmRrubNkBdcrTPtagtVegcNlIyAPPDzOhEGnJMQhcfKdLgWxZQDTesjWlyTGmbikAiQKmxuChpJKOfXK",
+    "phone_number": null,
+    "date_of_birth": "1953-05-15",
+    "profile_picture_url": "https://wells.net/tags/searchcategory.asp",
+    "locale": "zh_CN",
+    "tier": "platinum",
+    "lifetime_order_count": 423614335,
+    "lifetime_spend": 6077813128415.033,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "point",
+      "city": null,
+      "postal_code": "author",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2019-10-01T02:27:44.523650",
+        "ip_address": null,
+        "user_agent": "blue"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1985-12-20T19:03:19.074323",
+        "ip_address": "171.95.250.152",
+        "user_agent": "current"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1990-01-22T07:32:01.311722",
+        "ip_address": "139.175.71.213",
+        "user_agent": "official"
+      }
+    ],
+    "created_at": "2019-10-27T02:36:51.895869",
+    "last_login_at": null,
+    "deleted_at": "1972-04-26T23:13:50.224397"
+  },
+  {
+    "customer_id": "89a4d123-53f3-4f0e-bfd3-cd22ca74e053",
+    "email": "jamesmorales@example.org",
+    "first_name": "KDlHutLqaqQyfjHCIKsiNxHXtGGmhijRGgvnUUZqGhOmYWaJvupYCDjZAch",
+    "last_name": null,
+    "phone_number": null,
+    "date_of_birth": "1940-05-23",
+    "profile_picture_url": "https://heath-ramirez.com/tagfaq.php",
+    "locale": "zh_CN",
+    "tier": "gold",
+    "lifetime_order_count": 1277012626,
+    "lifetime_spend": 85508959356332.56,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "show",
+      "city": "whether",
+      "postal_code": "ahead",
+      "country_code": "GH"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1991-03-15T06:01:36.273928",
+        "ip_address": "50.199.38.196",
+        "user_agent": "force"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1991-03-27T16:04:11.879771",
+        "ip_address": "77.134.223.77",
+        "user_agent": "husband"
+      }
+    ],
+    "created_at": "1974-11-06T15:19:58.801824",
+    "last_login_at": "1988-10-18T05:46:59.350241",
+    "deleted_at": "2008-11-17T14:13:17.792026"
+  },
+  {
+    "customer_id": "d964fc51-80e7-4ef7-863b-ad394e83254f",
+    "email": "saracasey@example.net",
+    "first_name": "VHuELzgqzcBuDlVCUJjbkqiuijUfYLLVLJlpsdbSElvGhyHN",
+    "last_name": null,
+    "phone_number": "+188073878",
+    "date_of_birth": "2001-04-27",
+    "profile_picture_url": "http://brock.org/explore/blog/searchterms.html",
+    "locale": "de_DE",
+    "tier": "silver",
+    "lifetime_order_count": 1957038376,
+    "lifetime_spend": 31700234238010.773,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "develop",
+      "city": "research",
+      "postal_code": "employee",
+      "country_code": "FH"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1974-04-05T09:20:47.006739",
+        "ip_address": "76.34.233.43",
+        "user_agent": "wrong"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1996-10-24T06:48:39.751431",
+        "ip_address": "171.105.148.46",
+        "user_agent": "against"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1985-04-04T23:07:36.777932",
+        "ip_address": "40.42.224.85",
+        "user_agent": "see"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2009-10-13T15:11:45.269739",
+        "ip_address": "27.44.156.229",
+        "user_agent": null
+      }
+    ],
+    "created_at": "2008-02-06T05:33:17.288677",
+    "last_login_at": "1971-12-13T03:42:38.810615",
+    "deleted_at": "1972-07-12T11:10:32.667222"
+  },
+  {
+    "customer_id": "4e3a56b8-5b1a-4e0c-b6b5-e7f42629476e",
+    "email": "anthonyburns@example.com",
+    "first_name": "HcvqzhvTeShs",
+    "last_name": null,
+    "phone_number": "+4381279484",
+    "date_of_birth": "1942-05-03",
+    "profile_picture_url": "https://www.contreras.com/main/tags/mainprivacy.asp",
+    "locale": "en_GB",
+    "tier": "bronze",
+    "lifetime_order_count": 1076805133,
+    "lifetime_spend": 33356441159680.895,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1988-11-22T05:01:24.722329",
+        "ip_address": "47.42.125.119",
+        "user_agent": "up"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1985-08-27T12:37:04.648916",
+        "ip_address": "152.183.149.52",
+        "user_agent": "shake"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2013-11-13T15:01:15.463302",
+        "ip_address": "76.177.24.136",
+        "user_agent": "song"
+      }
+    ],
+    "created_at": "1997-10-24T17:40:28.889573",
+    "last_login_at": "1976-12-30T09:52:29.680127",
+    "deleted_at": "2011-04-04T15:18:43.185551"
+  },
+  {
+    "customer_id": "4c67697b-7bd8-4e7d-b98f-a94d7968d975",
+    "email": "danielhoward@example.net",
+    "first_name": "QHkoKUTTxpTxUGtqFaObbwSabklccGdjbVnhopwychWbErSqrmlirQGjvpoikOYbBxtdzUstHTndcAjnSptQLTuPJkcNtEhG",
+    "last_name": "iFysltcPDwQtDnSyEVxBUBtmboDgiRWwxpWdbSteHjqzcYhddQiYDuRawhxcY",
+    "phone_number": "+38091603914",
+    "date_of_birth": "1960-01-21",
+    "profile_picture_url": "http://www.everett.com/tags/tags/listregister.asp",
+    "locale": "pt_BR",
+    "tier": "gold",
+    "lifetime_order_count": 1328599565,
+    "lifetime_spend": 56739456722511.74,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "she",
+      "city": "huge",
+      "postal_code": "team",
+      "country_code": "HV"
+    },
+    "consent_records": null,
+    "created_at": "2006-10-23T20:05:14.986386",
+    "last_login_at": "1997-01-07T04:18:12.072945",
+    "deleted_at": "1985-09-11T15:59:08.230014"
+  },
+  {
+    "customer_id": "358c8ca6-20f5-4f61-8c57-366fa768626c",
+    "email": "christophercampbell@example.com",
+    "first_name": "mCmWsiEwl",
+    "last_name": "hSbnOQfIuRNFIFbUrgUtzHLAVhhPhfgtPjdsJbPolVvcbxGDzhANuIYsRCgJSjKeFayZWHqaSupRgYEUwljBtUnWsxsSrXoCSNd",
+    "phone_number": "+349145564",
+    "date_of_birth": "2000-04-15",
+    "profile_picture_url": "http://www.huff.com/wp-content/searchhome.html",
+    "locale": "ja_JP",
+    "tier": "gold",
+    "lifetime_order_count": 91794861,
+    "lifetime_spend": 37862767676931.42,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "about",
+      "city": "south",
+      "postal_code": "suggest",
+      "country_code": "AO"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1973-12-14T02:15:00.368587",
+        "ip_address": "148.241.98.235",
+        "user_agent": "cause"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2026-01-20T13:57:49.932007",
+        "ip_address": "80.56.88.2",
+        "user_agent": "property"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1991-06-04T03:35:21.382302",
+        "ip_address": "50.137.61.32",
+        "user_agent": "them"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2022-02-28T22:06:13.797104",
+        "ip_address": null,
+        "user_agent": "your"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1975-09-11T02:56:10.737838",
+        "ip_address": "65.15.176.96",
+        "user_agent": "sort"
+      }
+    ],
+    "created_at": "1999-09-29T04:48:13.286325",
+    "last_login_at": "1983-11-29T17:48:33.312883",
+    "deleted_at": "2022-04-17T17:15:16.612242"
+  },
+  {
+    "customer_id": "c7e4b609-08a3-4553-b90a-3183b375b8bc",
+    "email": "tammymiller@example.org",
+    "first_name": "NzhnJRaywxXmlDaYntrLMTIMrtbMUADWBvTAoxJjIgaXOtWmnNuUfPkFIcXEW",
+    "last_name": "aFNjYvscUhFgLsItQHsXypdbWBgBEvnQPKRifZSutRJqJbH",
+    "phone_number": "+281633260",
+    "date_of_birth": null,
+    "profile_picture_url": "http://meyer.com/wp-content/wp-content/searchhomepage.htm",
+    "locale": "ko_KR",
+    "tier": "bronze",
+    "lifetime_order_count": 2093069144,
+    "lifetime_spend": 11153289146595.002,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "him",
+      "city": "manager",
+      "postal_code": "black",
+      "country_code": "WB"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2003-04-18T10:21:35.305351",
+        "ip_address": "22.195.173.242",
+        "user_agent": "already"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1992-01-03T03:25:11.627153",
+        "ip_address": "138.48.8.152",
+        "user_agent": "end"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2018-03-16T06:44:21.535535",
+        "ip_address": "129.205.152.100",
+        "user_agent": null
+      }
+    ],
+    "created_at": "1993-07-26T02:12:53.248369",
+    "last_login_at": "1978-03-31T04:47:23.406307",
+    "deleted_at": "1999-04-09T22:57:13.082257"
+  },
+  {
+    "customer_id": "c7405c2b-cc42-450b-b88d-9cfab21e6c59",
+    "email": "mayertheresa@example.net",
+    "first_name": "NyMUZNfqBpvfBIrqScxNIzrculBuJlWXm",
+    "last_name": "SlLnuOlGaJIiRanyUrGUxavhHiUPZQxykgLAPaAYQOGPNYvaXYtYkKAkNiBwsOQqHpcIBKSqLnTv",
+    "phone_number": "+821189650176296",
+    "date_of_birth": "1934-08-26",
+    "profile_picture_url": "https://rodriguez.com/tags/wp-content/appprivacy.php",
+    "locale": "nl_NL",
+    "tier": "silver",
+    "lifetime_order_count": 406792032,
+    "lifetime_spend": 87510272648786.11,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2009-02-09T06:35:42.123803",
+        "ip_address": "172.37.173.223",
+        "user_agent": null
+      }
+    ],
+    "created_at": "2003-08-12T23:19:55.114013",
+    "last_login_at": null,
+    "deleted_at": "2015-07-25T06:45:58.373458"
+  },
+  {
+    "customer_id": "2ea4ebab-88b7-4b79-9abc-95280dc874ba",
+    "email": "alexaneal@example.net",
+    "first_name": "qHQQyWsRlMzLRXqjthhFltIPjkZUVIEIpZnvGVTwVZRLTvflCxKlldKfUyWimvEHodtkSALHDBRkXNTLbvTbdbSOVQXdM",
+    "last_name": "HTdBpKsQmYCZXcRHUUEwIoEPgrrAPBZfkKlRPxlSEpUtgGFrfUBbSjGPUGCpzvScyyfMJGpK",
+    "phone_number": "+21664304251116",
+    "date_of_birth": "1939-06-07",
+    "profile_picture_url": "https://baker-chan.com/blogprivacy.htm",
+    "locale": "ko_KR",
+    "tier": "silver",
+    "lifetime_order_count": 2067733982,
+    "lifetime_spend": 42207839508013.914,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "mouth",
+      "city": "now",
+      "postal_code": "method",
+      "country_code": "NU"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1971-02-05T03:27:41.582590",
+        "ip_address": "185.51.5.113",
+        "user_agent": "a"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1994-08-25T10:44:34.300339",
+        "ip_address": null,
+        "user_agent": "crime"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1985-05-04T20:47:25.424719",
+        "ip_address": "168.174.226.20",
+        "user_agent": null
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2013-01-22T12:38:56.720504",
+        "ip_address": "129.172.98.225",
+        "user_agent": "discussion"
+      }
+    ],
+    "created_at": "2003-05-17T12:36:45.192474",
+    "last_login_at": "1995-01-11T12:36:36.354313",
+    "deleted_at": "1990-02-07T17:54:30.815813"
+  },
+  {
+    "customer_id": "f4ff094d-67df-4d16-ba0a-2b9e8efc002e",
+    "email": "pkelley@example.org",
+    "first_name": "jXQsuxYlzAKoWUbBVEvjjJhDAQHmFeBZYiFdxOYGoMZIqtWJLiAiJexAVdnMfIJcKZeccFXttDlmUpO",
+    "last_name": null,
+    "phone_number": null,
+    "date_of_birth": null,
+    "profile_picture_url": "https://rose.net/tagssearch.html",
+    "locale": "en_US",
+    "tier": "silver",
+    "lifetime_order_count": 1242281014,
+    "lifetime_spend": 95135324640709.39,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "assume",
+      "city": "painting",
+      "postal_code": "while",
+      "country_code": "GL"
+    },
+    "consent_records": [],
+    "created_at": "2006-03-09T01:43:32.616018",
+    "last_login_at": "2024-05-19T04:11:35.784353",
+    "deleted_at": "1971-08-15T04:52:01.332921"
+  },
+  {
+    "customer_id": "3e5f4e53-8c24-4563-a20c-65cea0cca2fc",
+    "email": "williammclaughlin@example.com",
+    "first_name": "wwJgwAyJqvwVljthTchXYdyXjkasompjrpaDtb",
+    "last_name": "mERXnQaVVrHSGZeiFRFoJwnvFL",
+    "phone_number": "+9672522040852",
+    "date_of_birth": "1933-07-09",
+    "profile_picture_url": "https://wilson.com/category/wp-content/blogauthor.htm",
+    "locale": "en_US",
+    "tier": "silver",
+    "lifetime_order_count": 1716128419,
+    "lifetime_spend": 1086539082279.9915,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "person",
+      "city": "behind",
+      "postal_code": "control",
+      "country_code": "AH"
+    },
+    "consent_records": [],
+    "created_at": "2021-08-22T15:19:31.513308",
+    "last_login_at": "1990-11-13T14:45:13.829950",
+    "deleted_at": "2023-06-20T05:56:35.749312"
+  },
+  {
+    "customer_id": "6372d993-d9d5-4b89-a8a6-f088e7dc210c",
+    "email": "chanlisa@example.com",
+    "first_name": "sNBZYdMVlnniBzbEedBwdmkAjiMnhXqvtjfsEBiuoyrYrJjUlvfuCimeKkpwhuLocFnNkAceKHQpD",
+    "last_name": null,
+    "phone_number": "+943956009750",
+    "date_of_birth": "1942-12-29",
+    "profile_picture_url": "http://bush.org/appregister.php",
+    "locale": "fr_FR",
+    "tier": "silver",
+    "lifetime_order_count": 2087852185,
+    "lifetime_spend": 17481232578910.488,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "effect",
+      "city": "after",
+      "postal_code": "she",
+      "country_code": "PF"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1976-04-29T20:52:35.368421",
+        "ip_address": "158.213.228.103",
+        "user_agent": "specific"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1971-09-19T14:04:46.687953",
+        "ip_address": "1.66.12.161",
+        "user_agent": "each"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2001-03-21T16:36:57.278726",
+        "ip_address": "116.25.100.167",
+        "user_agent": "first"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2012-11-18T07:42:03.067548",
+        "ip_address": "100.50.2.233",
+        "user_agent": "especially"
+      }
+    ],
+    "created_at": "2024-04-14T10:45:05.864814",
+    "last_login_at": "1993-06-14T07:32:01.688393",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "95d56c89-69c8-4dca-8503-b3146b8ca481",
+    "email": "qbenson@example.com",
+    "first_name": "xXMrWCNNehRLUDgVHCgiAtOrFxajbHQHoucqBmmSOjnKUqGUgkKcBuCcnZTlXwrncLDhrpeDqTtoXEsfrQqHLPVyXdnYRvqtOXYO",
+    "last_name": "hTbfHuRuVzIVdoAexUkqWpRUpPKmNfrkaRmKwbKXDmBYaRbaxDWtlFCQhd",
+    "phone_number": null,
+    "date_of_birth": "1942-10-13",
+    "profile_picture_url": null,
+    "locale": "es_ES",
+    "tier": "silver",
+    "lifetime_order_count": 81506787,
+    "lifetime_spend": 10500958245106.518,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1993-09-17T16:44:11.279320",
+        "ip_address": "197.141.35.182",
+        "user_agent": "vote"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1985-02-26T13:54:09.964111",
+        "ip_address": "104.191.51.185",
+        "user_agent": "specific"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2011-05-24T16:26:46.631706",
+        "ip_address": "54.70.15.130",
+        "user_agent": "safe"
+      }
+    ],
+    "created_at": "2005-09-14T21:19:48.496599",
+    "last_login_at": null,
+    "deleted_at": "1980-12-30T15:35:13.519923"
+  },
+  {
+    "customer_id": "49da6d78-e08b-4202-9f80-1884dbf8911a",
+    "email": "brittany64@example.net",
+    "first_name": "cMazJcENeMwsqC",
+    "last_name": null,
+    "phone_number": "+65907368131182",
+    "date_of_birth": "1957-10-31",
+    "profile_picture_url": "http://www.burke.info/tag/blog/tagscategory.php",
+    "locale": null,
+    "tier": "silver",
+    "lifetime_order_count": 1854532547,
+    "lifetime_spend": 9066904491136.318,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "hit",
+      "postal_code": "policy",
+      "country_code": "XW"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2009-05-24T00:19:11.106415",
+        "ip_address": "85.8.36.37",
+        "user_agent": "card"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1980-12-07T19:08:29.636625",
+        "ip_address": "35.201.120.122",
+        "user_agent": "resource"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2021-09-14T07:36:29.365093",
+        "ip_address": "50.71.89.90",
+        "user_agent": "study"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2010-08-27T17:02:53.571904",
+        "ip_address": "146.131.254.185",
+        "user_agent": "parent"
+      }
+    ],
+    "created_at": "2003-09-30T00:27:01.520774",
+    "last_login_at": "2013-04-19T05:27:03.099960",
+    "deleted_at": "2000-03-12T21:24:46.671475"
+  },
+  {
+    "customer_id": "492d1e45-dc13-4865-928d-b072fd7d32b8",
+    "email": "jefferybell@example.net",
+    "first_name": null,
+    "last_name": "laSSGCJSJEkiKwAdaeOxZenHLuAWxQVejwyTkgwmuxngXyrvOlwx",
+    "phone_number": "+6082748398666",
+    "date_of_birth": null,
+    "profile_picture_url": "http://www.harris-williams.org/categoryprivacy.html",
+    "locale": "nl_NL",
+    "tier": "bronze",
+    "lifetime_order_count": 242508770,
+    "lifetime_spend": 71010974209246.69,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "own",
+      "city": "nearly",
+      "postal_code": "we",
+      "country_code": "GV"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1999-11-28T03:28:03.345994",
+        "ip_address": "14.34.97.122",
+        "user_agent": "treat"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1998-09-01T14:28:11.244736",
+        "ip_address": null,
+        "user_agent": "reflect"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2015-07-23T00:49:04.396129",
+        "ip_address": "1.185.74.249",
+        "user_agent": "popular"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1989-10-22T22:48:30.421811",
+        "ip_address": "148.176.98.91",
+        "user_agent": "mother"
+      }
+    ],
+    "created_at": "2008-04-27T18:01:05.270667",
+    "last_login_at": "2025-12-12T12:57:14.907834",
+    "deleted_at": "1984-12-28T18:18:20.296416"
+  },
+  {
+    "customer_id": "2c8fb08f-a211-492f-a12b-abba403e9b6f",
+    "email": "tmoss@example.net",
+    "first_name": "RcelMVqYaVEbKVXeLxHIeRJsqHSxDeggdNfksoNNlDLcwkJhxUPHFiyTYynFWwAPTfnCLPZrx",
+    "last_name": "IzNdgSPbpZAGaJrOWZmwDXCt",
+    "phone_number": "+81160350",
+    "date_of_birth": "1945-04-04",
+    "profile_picture_url": "https://www.flores.org/main/postsmain.php",
+    "locale": "zh_CN",
+    "tier": "silver",
+    "lifetime_order_count": 1660615873,
+    "lifetime_spend": 5989986329161.379,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "plan",
+      "city": "different",
+      "postal_code": "receive",
+      "country_code": "KX"
+    },
+    "consent_records": [],
+    "created_at": "1993-11-19T22:14:59.108846",
+    "last_login_at": "1973-06-09T04:37:28.157046",
+    "deleted_at": "1975-07-08T06:12:38.060902"
+  },
+  {
+    "customer_id": "e1a0196f-44b1-4f56-ba31-8748c6162971",
+    "email": "molinascott@example.net",
+    "first_name": "VnvDg",
+    "last_name": "BuKpKaaExPyDobRSEvnaCKraDzjFhFoWGbQYvDoGwuhclLXIzMWVPtYdYkJokFEocgfONoksRIrdlwsT",
+    "phone_number": null,
+    "date_of_birth": "1959-02-23",
+    "profile_picture_url": "https://smith.com/wp-content/main/blogregister.php",
+    "locale": "ja_JP",
+    "tier": "bronze",
+    "lifetime_order_count": 734159440,
+    "lifetime_spend": 86935215243011.08,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "unit",
+      "city": "arrive",
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": null,
+    "created_at": "1983-10-09T04:00:32.921550",
+    "last_login_at": "1974-05-12T10:07:05.016241",
+    "deleted_at": "1999-01-13T11:22:19.027195"
+  },
+  {
+    "customer_id": "5be7732f-9a19-445c-b78c-7149745ec703",
+    "email": "adam26@example.com",
+    "first_name": null,
+    "last_name": "xktnLKxJDWonMHcXStoTuwMhMM",
+    "phone_number": "+1840092",
+    "date_of_birth": "1936-12-16",
+    "profile_picture_url": "https://www.may.com/category/mainfaq.html",
+    "locale": "es_ES",
+    "tier": "gold",
+    "lifetime_order_count": 960747630,
+    "lifetime_spend": 97799052994260.16,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "arrive",
+      "city": null,
+      "postal_code": "special",
+      "country_code": "UI"
+    },
+    "consent_records": [],
+    "created_at": "2019-01-01T09:27:21.405363",
+    "last_login_at": "1992-11-24T22:22:14.126239",
+    "deleted_at": "1976-10-31T16:32:00.998974"
+  },
+  {
+    "customer_id": "c5d24c4d-2485-4bbb-9027-d7948ba17ece",
+    "email": "stephanie90@example.net",
+    "first_name": "fwHGxrOdKLvDCzzOjQkHbZuLuMAdXjJrIACBvKfeVTVqqPpnqJsUHpzxkjaGFjEVZwPYbpmnCfucxbii",
+    "last_name": null,
+    "phone_number": "+6205827202",
+    "date_of_birth": "1944-03-25",
+    "profile_picture_url": "http://www.howard.info/list/taghome.htm",
+    "locale": "ko_KR",
+    "tier": "gold",
+    "lifetime_order_count": 1332010334,
+    "lifetime_spend": 99341038570341.58,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1993-05-07T09:10:16.014149",
+        "ip_address": null,
+        "user_agent": "discussion"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2021-08-01T11:29:17.693148",
+        "ip_address": "221.29.176.27",
+        "user_agent": "history"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1971-04-30T02:25:30.754092",
+        "ip_address": null,
+        "user_agent": "relate"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1980-12-29T22:53:43.302973",
+        "ip_address": "210.79.76.93",
+        "user_agent": "radio"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2001-12-19T10:10:11.586008",
+        "ip_address": "130.242.197.28",
+        "user_agent": null
+      }
+    ],
+    "created_at": "1988-11-30T23:19:29.344358",
+    "last_login_at": "1982-08-13T10:00:01.678917",
+    "deleted_at": "2001-12-10T11:50:34.414131"
+  },
+  {
+    "customer_id": "863a3c7c-e6c2-4c79-9d48-343f3aa470b4",
+    "email": "smallcourtney@example.com",
+    "first_name": "nqAkOEKkmMUlSTmksrJZjkDnnLocSeHQJjBtZoBRBOLJXHTlkgGQg",
+    "last_name": "LcDCPSsebtQDNCEqNiJZuvduwrgJGgeOTZLbEXuqONSkPfdZsfwDVWZnamqZtxipGkMnVlsaSNEQVHlacRHZBnaxNy",
+    "phone_number": "+555014394811",
+    "date_of_birth": "2005-09-04",
+    "profile_picture_url": "http://campbell.com/blog/tagauthor.html",
+    "locale": "de_DE",
+    "tier": "bronze",
+    "lifetime_order_count": 993179218,
+    "lifetime_spend": 46143810769904.38,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "build",
+      "city": null,
+      "postal_code": "memory",
+      "country_code": null
+    },
+    "consent_records": [],
+    "created_at": "2020-11-25T05:01:03.499680",
+    "last_login_at": "1987-09-26T21:37:05.893835",
+    "deleted_at": "2024-07-22T20:18:35.439740"
+  },
+  {
+    "customer_id": "614c1e59-0af4-42dc-9994-0b8e57f3a792",
+    "email": "autumndavies@example.net",
+    "first_name": null,
+    "last_name": "ntFHHIICKpCiRIOFnVItpAqBzsXwGTCrVquTyFCXYXVscVHtEvQmlHnOR",
+    "phone_number": "+86747529316721",
+    "date_of_birth": null,
+    "profile_picture_url": "http://thomas-martinez.biz/exploresearch.html",
+    "locale": "en_US",
+    "tier": "bronze",
+    "lifetime_order_count": 1901319963,
+    "lifetime_spend": 32451550887296.145,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "herself",
+      "city": "image",
+      "postal_code": null,
+      "country_code": "EX"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2016-01-26T22:34:36.515870",
+        "ip_address": "138.230.11.176",
+        "user_agent": "mission"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2017-09-02T22:15:38.486780",
+        "ip_address": "208.226.139.71",
+        "user_agent": "away"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2009-12-23T02:25:26.143627",
+        "ip_address": null,
+        "user_agent": "year"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1990-11-30T01:54:20.731669",
+        "ip_address": "203.34.99.38",
+        "user_agent": "against"
+      }
+    ],
+    "created_at": "1997-02-05T04:09:32.024220",
+    "last_login_at": "1971-12-25T18:55:28.098593",
+    "deleted_at": "1975-10-06T07:29:13.841439"
+  },
+  {
+    "customer_id": "b3cfadba-5fee-485d-8fc9-d29d8c2fbb72",
+    "email": "goodwinjose@example.net",
+    "first_name": "EEuEjLTuoBXGVGaGdNzkpxzTuMbHWOjMiw",
+    "last_name": "FZWTdGiJKlmKgIkrlLKKIqWQtaEttbgVMwzIFSvVUMsXrWGoGVFDryIfEpDDPBdzIfzPrNbWtOyfEXQoACToqDRptQXDseMv",
+    "phone_number": "+697373227381",
+    "date_of_birth": "1932-08-11",
+    "profile_picture_url": "http://www.ortiz.com/explore/tagscategory.html",
+    "locale": null,
+    "tier": "platinum",
+    "lifetime_order_count": 1819754327,
+    "lifetime_spend": 59389433981320.83,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "social",
+      "city": "keep",
+      "postal_code": "arrive",
+      "country_code": "UN"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1970-06-19T07:27:23.216112",
+        "ip_address": "174.249.182.87",
+        "user_agent": "TV"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1987-12-28T17:02:42.053750",
+        "ip_address": "90.249.75.180",
+        "user_agent": "social"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "2007-05-11T22:51:25.172977",
+        "ip_address": "124.209.64.198",
+        "user_agent": "economic"
+      }
+    ],
+    "created_at": "2023-08-02T19:17:53.180430",
+    "last_login_at": "1971-11-18T02:46:16.646350",
+    "deleted_at": "2014-12-26T21:38:40.118388"
+  },
+  {
+    "customer_id": "76a8b0a6-3710-4338-8c2f-705bf17bd4a5",
+    "email": "stephaniepage@example.org",
+    "first_name": "FeFAoHQCxnTfGnOhupHuqvPphHdfMxjqgeYyODIngzdlxGZNMMOwTcQagvyCxOUPbPeUTzmNwmD",
+    "last_name": null,
+    "phone_number": "+76721440651752",
+    "date_of_birth": "1944-07-06",
+    "profile_picture_url": "http://www.malone.org/search/listabout.php",
+    "locale": "ko_KR",
+    "tier": "platinum",
+    "lifetime_order_count": 587841389,
+    "lifetime_spend": 74759937401121.7,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "they",
+      "city": "heavy",
+      "postal_code": "teach",
+      "country_code": "OM"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1985-03-07T11:30:40.806789",
+        "ip_address": "189.83.129.122",
+        "user_agent": "note"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1971-02-20T04:48:43.878001",
+        "ip_address": null,
+        "user_agent": "place"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2000-04-25T00:17:46.202457",
+        "ip_address": "159.34.178.38",
+        "user_agent": "small"
+      }
+    ],
+    "created_at": "2019-06-20T18:14:06.843819",
+    "last_login_at": "1975-07-01T01:19:27.653157",
+    "deleted_at": "1970-05-05T20:31:33.282951"
+  },
+  {
+    "customer_id": "5a064acc-4d81-491d-9786-a63f3c4ddeb6",
+    "email": "anaobrien@example.net",
+    "first_name": null,
+    "last_name": "uqVvASfyJbGWtNbzRqgXunzNlGuLdozyJehNJiQlXUhoWCwQExKohAbrUPyJTysviyPUHFrRTynOGYVcJhRuyMCTpanOEbM",
+    "phone_number": null,
+    "date_of_birth": "1937-08-09",
+    "profile_picture_url": "https://taylor-jones.com/wp-contentcategory.asp",
+    "locale": "ko_KR",
+    "tier": "platinum",
+    "lifetime_order_count": 1433088974,
+    "lifetime_spend": 50985758606523.07,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1996-05-16T17:40:14.728842",
+        "ip_address": "11.6.221.235",
+        "user_agent": "man"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2012-05-05T00:42:21.952439",
+        "ip_address": "44.167.93.69",
+        "user_agent": null
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2004-12-02T06:49:59.929500",
+        "ip_address": "11.213.142.130",
+        "user_agent": "hotel"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1993-03-27T10:11:33.802521",
+        "ip_address": "162.231.89.42",
+        "user_agent": "information"
+      }
+    ],
+    "created_at": "1993-02-04T01:08:44.233305",
+    "last_login_at": "1983-11-24T13:25:18.801583",
+    "deleted_at": "1994-03-15T21:50:40.929849"
+  },
+  {
+    "customer_id": "dab5a794-e6b0-45d6-8b47-1797d3bede3a",
+    "email": "millerkaren@example.org",
+    "first_name": "DtbsQmrsTGkbcOGzgHxFBVQSYgcjnzKfgyWWXoiDJNwwrXwJDQfJkqajjmmleuTiFVOpkPjJjgdmaHwPJk",
+    "last_name": "aXZNpQtlvAfTzFqGrXHEmfaJsJXzbWWESRmGwqoMyfvoLbfkoMqubRjzRNPrgaDBUOLHQryqSNSbnuwYO",
+    "phone_number": "+1279491682734",
+    "date_of_birth": "1963-06-03",
+    "profile_picture_url": null,
+    "locale": "ko_KR",
+    "tier": "platinum",
+    "lifetime_order_count": 1578810772,
+    "lifetime_spend": 92486804433587.9,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "little",
+      "city": "trip",
+      "postal_code": "might",
+      "country_code": "QE"
+    },
+    "consent_records": [],
+    "created_at": "1975-05-12T00:59:54.362745",
+    "last_login_at": "1985-06-01T01:02:29.850003",
+    "deleted_at": "2020-10-09T08:49:54.482621"
+  },
+  {
+    "customer_id": "bbec1f93-066c-47ec-a57a-712763ba9977",
+    "email": "swalker@example.net",
+    "first_name": "rucQmIxTBcbWADfgsgVdmyKefcQzoVvQHBhbHnwIPlLAGc",
+    "last_name": "SUGFRKKjrKSRJzvvrMMPnKDtsFr",
+    "phone_number": null,
+    "date_of_birth": "1997-09-30",
+    "profile_picture_url": "https://www.ortega-reed.com/wp-contentprivacy.php",
+    "locale": "en_GB",
+    "tier": "platinum",
+    "lifetime_order_count": 542289858,
+    "lifetime_spend": 52802966151242.5,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "great",
+      "postal_code": "few",
+      "country_code": null
+    },
+    "consent_records": [],
+    "created_at": "1971-11-24T23:49:19.997547",
+    "last_login_at": "2011-11-12T07:13:04.822511",
+    "deleted_at": "1994-10-01T00:45:52.046897"
+  },
+  {
+    "customer_id": "a0ce2256-3010-4b94-a99b-49225c63d50f",
+    "email": "maryrobinson@example.net",
+    "first_name": "fvVHdYxyrIagmU",
+    "last_name": "YjNKWRuqQgSzhvMfkjHitopMXkCPUjSWrCoYGiEbfAMSHcZlRFItdCRuKlisnhQLcjswHNQvtmilIYzWvqhUjIctvWfOerkRo",
+    "phone_number": "+171678672016658",
+    "date_of_birth": "1998-12-02",
+    "profile_picture_url": "https://reese-rose.com/postsauthor.html",
+    "locale": "pt_BR",
+    "tier": "gold",
+    "lifetime_order_count": 353724162,
+    "lifetime_spend": 95044319413631.83,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "time",
+      "city": "Mr",
+      "postal_code": "war",
+      "country_code": "FW"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1993-07-27T08:41:28.541881",
+        "ip_address": "195.176.243.219",
+        "user_agent": "still"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2001-02-22T03:40:54.670907",
+        "ip_address": "10.174.26.18",
+        "user_agent": "light"
+      }
+    ],
+    "created_at": "2024-05-20T03:56:27.063123",
+    "last_login_at": "1992-04-03T13:32:32.468364",
+    "deleted_at": "2009-02-02T21:28:26.972759"
+  },
+  {
+    "customer_id": "4ea20e35-86d0-4312-900b-735d4f422444",
+    "email": "emilyyoung@example.com",
+    "first_name": "CghVALvMRmvEyisMWakDjUbzWdQwAEEggUclgGUlMxMXGkOxlTivkgqrFMbiLUbRDjqGytdbND",
+    "last_name": "pGghbxFkmtoNyCFDMtzoVzOuLBtYfzBJHhLhLjMtKBrdxsHNutfwNOHSeCgebNgKCxdkHEuSrSiMRNqanVuz",
+    "phone_number": "+967115973005",
+    "date_of_birth": "1999-05-08",
+    "profile_picture_url": "https://www.morales.com/explore/searchhome.html",
+    "locale": "en_US",
+    "tier": "gold",
+    "lifetime_order_count": 2109782837,
+    "lifetime_spend": 43105369837136.27,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "attention",
+      "city": "personal",
+      "postal_code": "family",
+      "country_code": "FG"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1986-07-28T17:07:52.036104",
+        "ip_address": "153.23.150.101",
+        "user_agent": "skin"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1989-04-06T10:11:18.576805",
+        "ip_address": "37.187.99.109",
+        "user_agent": null
+      }
+    ],
+    "created_at": "2013-02-11T22:07:55.237334",
+    "last_login_at": "2014-11-02T20:33:30.485424",
+    "deleted_at": "1975-12-05T04:02:04.898236"
+  },
+  {
+    "customer_id": "12567f10-00bc-4a92-a903-85a46f4e67fb",
+    "email": "washingtonwhitney@example.net",
+    "first_name": "nJxiCxyABOwHuQACabPLgpdEsaWmZjTfWiGPooisKitMDtKPbyxFfuQbdzSqHNbydFnJsct",
+    "last_name": "VtbMruJrkMomyANEsciGfdcxnRGMvXaVRBhZOXff",
+    "phone_number": "+30589009",
+    "date_of_birth": "1965-09-30",
+    "profile_picture_url": "https://randall.org/tag/wp-content/categoryregister.html",
+    "locale": "de_DE",
+    "tier": "silver",
+    "lifetime_order_count": 170932446,
+    "lifetime_spend": 78464245673423.6,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "bit",
+      "city": "product",
+      "postal_code": "guess",
+      "country_code": "ZZ"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2015-09-19T12:00:45.410918",
+        "ip_address": "99.52.93.35",
+        "user_agent": null
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2004-10-09T16:06:50.711860",
+        "ip_address": "105.105.83.229",
+        "user_agent": "relationship"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2005-02-26T13:49:51.277377",
+        "ip_address": "87.243.170.134",
+        "user_agent": "might"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1997-11-14T02:24:41.954448",
+        "ip_address": "134.90.212.226",
+        "user_agent": "general"
+      }
+    ],
+    "created_at": "2021-10-30T22:19:32.344454",
+    "last_login_at": "2015-12-01T02:58:39.290575",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "a16f2c37-af0d-476a-a5e8-bcbe40bbcb9c",
+    "email": "ldominguez@example.net",
+    "first_name": "dKctnpECNlbbAaRgpFzzJREGsdnewtIOvAdHmmjyzlaJNnYBuxElRkAjqbOpPpOtVR",
+    "last_name": "KTxOgitthKCvYsOlXathfTieTsRMbSLKYRWdKyOdhArtfGvOpjaXFS",
+    "phone_number": "+9519788745254",
+    "date_of_birth": "2005-09-26",
+    "profile_picture_url": null,
+    "locale": "de_DE",
+    "tier": "platinum",
+    "lifetime_order_count": 1361753317,
+    "lifetime_spend": 35089252046397.203,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "theory",
+      "city": "score",
+      "postal_code": "out",
+      "country_code": "KP"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1997-07-11T10:56:55.876367",
+        "ip_address": "137.169.184.212",
+        "user_agent": "increase"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1994-05-16T19:50:31.042688",
+        "ip_address": "190.97.95.222",
+        "user_agent": "employee"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1977-07-28T06:16:53.908329",
+        "ip_address": "155.83.167.110",
+        "user_agent": null
+      }
+    ],
+    "created_at": "1990-02-12T21:04:38.788513",
+    "last_login_at": "1981-06-17T11:51:05.079156",
+    "deleted_at": "1979-09-01T10:27:01.494454"
+  },
+  {
+    "customer_id": "fd80a6ca-c089-45ea-9822-e5468d51ff7f",
+    "email": "jeffrey55@example.org",
+    "first_name": null,
+    "last_name": "M",
+    "phone_number": null,
+    "date_of_birth": "1990-11-08",
+    "profile_picture_url": "https://www.webb.net/list/postsindex.asp",
+    "locale": "fr_FR",
+    "tier": "platinum",
+    "lifetime_order_count": 798780915,
+    "lifetime_spend": 89502368575753.88,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "or",
+      "postal_code": "practice",
+      "country_code": "OW"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2007-12-04T01:25:51.565342",
+        "ip_address": "192.71.52.109",
+        "user_agent": "public"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1995-11-25T06:02:38.480575",
+        "ip_address": "187.34.178.41",
+        "user_agent": "agreement"
+      }
+    ],
+    "created_at": "1976-02-21T08:11:52.124502",
+    "last_login_at": "1991-03-10T02:26:01.239207",
+    "deleted_at": "2000-10-09T13:40:54.058903"
+  },
+  {
+    "customer_id": "9be64155-f623-47cd-8661-9b6078962937",
+    "email": "alexandria67@example.com",
+    "first_name": "szTBSYCRdfwUaDHkVKUNfDZZoFazzozGiAjYLProegAVqJKbCDwflODaSWeEXVnJivRyt",
+    "last_name": "QptwAFayUkLhRWaoHEbQykQKPawPJcQGjViDmzlginKkpZNwaWmQoscjccvGOrMXQEnnxb",
+    "phone_number": "+901097854",
+    "date_of_birth": "1982-01-04",
+    "profile_picture_url": "http://mclaughlin-jefferson.com/searchmain.html",
+    "locale": "en_GB",
+    "tier": "silver",
+    "lifetime_order_count": 1250563459,
+    "lifetime_spend": 15655644497481.236,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [],
+    "created_at": "1976-12-15T22:35:51.929854",
+    "last_login_at": "1994-06-30T20:20:24.683944",
+    "deleted_at": "1980-05-04T15:35:06.272635"
+  },
+  {
+    "customer_id": "17ec118e-27fc-47e6-9a07-09c5b0f23e25",
+    "email": "anthony88@example.net",
+    "first_name": "KRGuUudfCTRnXRAyVytjwEjLFDCmuRSFeWUXXpXjEhQHsYuxLeNJqsOjpfDKqZpS",
+    "last_name": "JfICIPoxDPLNAPXhRmbHiaHUYS",
+    "phone_number": "+2692907904729",
+    "date_of_birth": "1986-07-15",
+    "profile_picture_url": null,
+    "locale": "fr_FR",
+    "tier": "gold",
+    "lifetime_order_count": 887559972,
+    "lifetime_spend": 34061751776466.176,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "base",
+      "city": "condition",
+      "postal_code": "prevent",
+      "country_code": "II"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2021-10-26T19:37:12.489847",
+        "ip_address": null,
+        "user_agent": "process"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1991-01-08T05:39:14.785032",
+        "ip_address": null,
+        "user_agent": "per"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2004-10-31T19:58:20.941861",
+        "ip_address": "199.208.148.206",
+        "user_agent": "statement"
+      }
+    ],
+    "created_at": "1970-06-25T03:12:54.778777",
+    "last_login_at": "2025-06-13T00:18:39.756111",
+    "deleted_at": "2013-01-17T13:16:10.966849"
+  },
+  {
+    "customer_id": "ba09f0c9-1983-438c-830c-2ab734b28821",
+    "email": "donaldcisneros@example.org",
+    "first_name": "hWrwUKBbOiIbCGrMnZZuBIfSAlUHLMUUZDhWrmntJlapiBUwuXxfwlxrijrAkyXtGaHMgWYmacCHvjGsE",
+    "last_name": "eLKYIyALGbKQZptXpAexeIjgfVpzoUTLpWwwkWskzhUROdNmWetCnAreDZVZXEpGaekpCIHyPawSNcikRxBSl",
+    "phone_number": null,
+    "date_of_birth": null,
+    "profile_picture_url": "https://www.carter.biz/blog/categoriesregister.html",
+    "locale": "ko_KR",
+    "tier": "gold",
+    "lifetime_order_count": 717792642,
+    "lifetime_spend": 44749585345655.28,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "personal",
+      "city": "way",
+      "postal_code": null,
+      "country_code": "FK"
+    },
+    "consent_records": [],
+    "created_at": "1994-03-24T03:07:21.482664",
+    "last_login_at": "1979-07-01T14:02:59.450746",
+    "deleted_at": "1974-03-23T02:03:03.163813"
+  },
+  {
+    "customer_id": "9bd732ae-7485-44dc-8a6d-d5c39ce191aa",
+    "email": "anne92@example.com",
+    "first_name": "VQwdJlXvDtmrbGeTvHBUXAbvATTskumiMxoUERNJjXDYDdi",
+    "last_name": "tPoNEoNcxCaCqwEVsBTZBejfWLBnUrMyCoGXzT",
+    "phone_number": "+371194981",
+    "date_of_birth": "1930-04-18",
+    "profile_picture_url": "https://jones-turner.com/posts/appauthor.htm",
+    "locale": "nl_NL",
+    "tier": "silver",
+    "lifetime_order_count": 2096549730,
+    "lifetime_spend": 56888763452119.336,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "blue",
+      "city": "mean",
+      "postal_code": "what",
+      "country_code": "EX"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2000-04-28T09:38:46.875828",
+        "ip_address": "10.164.142.198",
+        "user_agent": "boy"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2006-04-20T18:27:42.332975",
+        "ip_address": "97.60.102.1",
+        "user_agent": "recent"
+      }
+    ],
+    "created_at": "1975-04-22T12:00:14.952303",
+    "last_login_at": "1982-03-20T19:07:54.117735",
+    "deleted_at": "2008-03-24T00:52:09.428449"
+  },
+  {
+    "customer_id": "3f48d912-a3c8-406b-8d5b-89ad524d5637",
+    "email": "james42@example.net",
+    "first_name": "OrKQIJmdrVYNeKtmOTcVuyLJoOYYjyrnwzw",
+    "last_name": "PAxeAvnTCLfuCPetSZwacoGWnYtSoflqHkKyIdpbAFktPsmeqOhIgOxFsdsgBFAdSwiIq",
+    "phone_number": "+3859381399683",
+    "date_of_birth": "1968-04-14",
+    "profile_picture_url": "https://smith.com/search/main/tagscategory.php",
+    "locale": "pt_BR",
+    "tier": "silver",
+    "lifetime_order_count": 452377278,
+    "lifetime_spend": 31641630902567.93,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "collection",
+      "city": "include",
+      "postal_code": "none",
+      "country_code": "XU"
+    },
+    "consent_records": [],
+    "created_at": "1976-11-16T12:58:48.463980",
+    "last_login_at": null,
+    "deleted_at": "1993-02-02T17:01:33.274343"
+  },
+  {
+    "customer_id": "9b97a446-1606-4861-a25f-24173472b8f9",
+    "email": "tammy87@example.com",
+    "first_name": "HECEaZQyXdLKkgATBhplitKpIBSeRLZYKSKlBwWmujZMifOlKJGjEHiySwOnjXqQaSxnVaWXjAliUsnOMOSHLVM",
+    "last_name": null,
+    "phone_number": "+96167273",
+    "date_of_birth": "1970-11-08",
+    "profile_picture_url": "http://www.skinner-logan.net/search/categorieshome.jsp",
+    "locale": "fr_FR",
+    "tier": "gold",
+    "lifetime_order_count": 1424885299,
+    "lifetime_spend": 82529785951480.66,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "plant",
+      "city": "decide",
+      "postal_code": "anyone",
+      "country_code": "QJ"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1979-07-26T17:31:20.129103",
+        "ip_address": "56.218.160.97",
+        "user_agent": "eat"
+      }
+    ],
+    "created_at": "1988-11-13T15:58:33.983225",
+    "last_login_at": "1993-09-04T06:11:13.109990",
+    "deleted_at": "1975-04-02T06:18:28.862939"
+  },
+  {
+    "customer_id": "9015af8d-e244-4899-bbd8-25ea8b3ff122",
+    "email": "seanwhite@example.org",
+    "first_name": "rhbNCparmOyYycoYYvmKgADIcXavCYqIsFWfLeyOHBnme",
+    "last_name": "OqctXdSkGeEEpvRufpPpaYuZBLWtYqENuVJeblqSBZjgmOnoEdixpRPffjBdlSUq",
+    "phone_number": "+3119092",
+    "date_of_birth": "1951-06-03",
+    "profile_picture_url": "https://hogan-martin.com/list/list/wp-contentabout.htm",
+    "locale": "ko_KR",
+    "tier": "silver",
+    "lifetime_order_count": 1847805512,
+    "lifetime_spend": 27876885026422.65,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": "certainly",
+      "postal_code": "the",
+      "country_code": "MV"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2000-02-26T05:44:34.707298",
+        "ip_address": "149.254.239.165",
+        "user_agent": "their"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1970-10-23T15:59:41.630316",
+        "ip_address": "73.89.198.245",
+        "user_agent": "beyond"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2024-09-01T01:51:31.184592",
+        "ip_address": "148.151.242.232",
+        "user_agent": "draw"
+      }
+    ],
+    "created_at": "2001-05-12T12:57:37.917266",
+    "last_login_at": null,
+    "deleted_at": "1971-09-01T13:19:04.277304"
+  },
+  {
+    "customer_id": "1f08cca5-7053-41b3-b3b1-87655536a58d",
+    "email": "jonesbruce@example.com",
+    "first_name": "HbSdxlzwSVodINAftHQiVVNGIKThfrZtstoCJefnjODuWjMSqWzFsJQBzxVRhVghPJYGmShwDFVVBtgFzertxF",
+    "last_name": "fxcWzQTTYrRBLBJlDcidADlqldtQxGkUkiideJrjxPuLoykpNGrQAup",
+    "phone_number": "+97122817",
+    "date_of_birth": "1962-10-14",
+    "profile_picture_url": null,
+    "locale": "fr_FR",
+    "tier": "platinum",
+    "lifetime_order_count": 1080402832,
+    "lifetime_spend": 31208485042217.895,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "art",
+      "city": "gun",
+      "postal_code": "offer",
+      "country_code": "WL"
+    },
+    "consent_records": null,
+    "created_at": "2001-01-30T13:37:43.899977",
+    "last_login_at": "2016-08-31T09:11:26.761205",
+    "deleted_at": "1972-02-06T22:31:09.477888"
+  },
+  {
+    "customer_id": "f502794e-1650-4904-be6e-94469832f980",
+    "email": "heather99@example.net",
+    "first_name": "hzhaQjTMhPGutgZFhzXQiFWkZruJklneMIKRXcLGQcgIaumSRjCABykYDZLkfYdGvw",
+    "last_name": "WmkTLMOTgZhujeCqvvdHDJNUzQNtrHZOPPyZlwaeyy",
+    "phone_number": null,
+    "date_of_birth": null,
+    "profile_picture_url": null,
+    "locale": "ko_KR",
+    "tier": "gold",
+    "lifetime_order_count": 580636660,
+    "lifetime_spend": 75393201665851.36,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "property",
+      "city": "PM",
+      "postal_code": "bag",
+      "country_code": "EQ"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2011-09-18T18:17:40.391105",
+        "ip_address": "62.36.13.41",
+        "user_agent": "clearly"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2016-01-30T00:23:32.418530",
+        "ip_address": "123.181.53.254",
+        "user_agent": "team"
+      }
+    ],
+    "created_at": "2025-03-07T09:57:55.438794",
+    "last_login_at": "2001-11-13T11:20:50.764053",
+    "deleted_at": "1997-07-15T16:23:41.031196"
+  },
+  {
+    "customer_id": "6b20ccef-702d-49b4-8a88-d91bfe0a37e0",
+    "email": "caitlynjordan@example.org",
+    "first_name": "XuzpyfKkBKatHQtzrNZWLKukJFjQBKFGbqwMAkMVwQANlcuXbBAsSmEcRZtY",
+    "last_name": "YWKcmqbtTCODEAHtCozjASgrEEneFsRyPVQLGaciFcfnHoZkhfwvzAQsKZJNzJpxTXBiTXQKCmkVFmCJIdmFWy",
+    "phone_number": null,
+    "date_of_birth": "1935-07-26",
+    "profile_picture_url": "https://willis.com/tagsterms.htm",
+    "locale": "de_DE",
+    "tier": "silver",
+    "lifetime_order_count": 1421064811,
+    "lifetime_spend": 77557296500620.17,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "reality",
+      "city": "prevent",
+      "postal_code": "help",
+      "country_code": "GR"
+    },
+    "consent_records": [],
+    "created_at": "2010-03-15T01:49:26.736439",
+    "last_login_at": "1993-04-26T18:27:21.832001",
+    "deleted_at": "2013-04-15T16:53:12.334684"
+  },
+  {
+    "customer_id": "55560ac3-bf0c-4917-9843-d7479acf2399",
+    "email": "murraykristina@example.net",
+    "first_name": "XrExnXngjQQCIELbdLxbFcZxERsAOgPEwecwkZIlHSFCQKvClCQvgqzZ",
+    "last_name": "STHUMXFqGbFfWhtqdOLlVEidlrmmzZhdFnpgHffDTeYiCgVJhTHZveSXBDrNOHPZKdzOxTPjmBSXItqjRfEKQSXrZKtBp",
+    "phone_number": null,
+    "date_of_birth": "1981-04-14",
+    "profile_picture_url": "https://johnson.com/search/main/wp-contenthomepage.html",
+    "locale": "pt_BR",
+    "tier": "silver",
+    "lifetime_order_count": 1411661678,
+    "lifetime_spend": 97441410630426.38,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "hundred",
+      "postal_code": "describe",
+      "country_code": "SX"
+    },
+    "consent_records": null,
+    "created_at": "1981-10-13T00:01:50.610332",
+    "last_login_at": "2012-11-04T02:58:52.198589",
+    "deleted_at": "1970-08-01T09:42:32.896214"
+  },
+  {
+    "customer_id": "0f045f38-116e-4501-b212-794e5b880210",
+    "email": "waynejones@example.org",
+    "first_name": "aCitSuRzireOhdjQTHddTMzzSEDlCcItwxbtKvWhauzhMhTuPDavpgrZniLYIypAEVDlmcymHzog",
+    "last_name": "qVoyMalUnGWBRoDTHMhhAKORVGueRIbcjhXyYGrgMNSkFqlxZuhtdHT",
+    "phone_number": "+9384117675762",
+    "date_of_birth": "1933-01-21",
+    "profile_picture_url": "https://vaughn.biz/app/app/blogindex.jsp",
+    "locale": "en_GB",
+    "tier": "silver",
+    "lifetime_order_count": 1061416327,
+    "lifetime_spend": 49111051801171.39,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "trouble",
+      "postal_code": "size",
+      "country_code": "HJ"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1987-11-16T01:33:32.224723",
+        "ip_address": "71.37.126.229",
+        "user_agent": "to"
+      }
+    ],
+    "created_at": "1992-02-06T03:02:21.357115",
+    "last_login_at": "2003-11-23T06:41:51.276314",
+    "deleted_at": "2015-06-02T08:15:19.867467"
+  },
+  {
+    "customer_id": "ba51fc54-d681-4b9e-8f59-38a50f5dc713",
+    "email": "adamsdana@example.net",
+    "first_name": "zFBPPwaGbWvRhAbGMW",
+    "last_name": "sUbvyLJO",
+    "phone_number": "+75034278149",
+    "date_of_birth": "1999-06-03",
+    "profile_picture_url": "http://www.barber.com/main/categorypost.html",
+    "locale": "en_US",
+    "tier": "silver",
+    "lifetime_order_count": 262963459,
+    "lifetime_spend": 65801933513640.0,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1996-10-21T03:39:56.204375",
+        "ip_address": "141.219.18.41",
+        "user_agent": "manage"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2018-05-13T05:35:36.169862",
+        "ip_address": "160.214.253.31",
+        "user_agent": "ever"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "2004-09-23T10:13:19.644858",
+        "ip_address": "18.250.214.7",
+        "user_agent": "mission"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2012-03-05T19:48:24.326765",
+        "ip_address": "5.195.151.246",
+        "user_agent": "sure"
+      }
+    ],
+    "created_at": "1990-05-31T19:43:13.779721",
+    "last_login_at": "1993-03-12T13:29:13.618526",
+    "deleted_at": "1981-12-26T21:06:07.048769"
+  },
+  {
+    "customer_id": "7e99a381-f10e-4db9-9dc2-d89558778075",
+    "email": "mooremegan@example.com",
+    "first_name": null,
+    "last_name": "ewiuCFbREqwehUWyEBHLKtMqoBunItynQzMvCRrPGivSUoXKocZJL",
+    "phone_number": "+3343240487",
+    "date_of_birth": "1944-09-04",
+    "profile_picture_url": "https://www.williams.com/main/wp-content/appabout.php",
+    "locale": "en_GB",
+    "tier": "bronze",
+    "lifetime_order_count": 1627368466,
+    "lifetime_spend": 91368835312116.98,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": "two",
+      "postal_code": "growth",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2008-04-01T06:07:46.416674",
+        "ip_address": "204.130.92.231",
+        "user_agent": null
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1979-03-31T06:42:15.510455",
+        "ip_address": "178.225.196.14",
+        "user_agent": null
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1982-10-19T03:29:35.416054",
+        "ip_address": "122.165.178.224",
+        "user_agent": "administration"
+      }
+    ],
+    "created_at": "2011-01-04T12:37:08.966747",
+    "last_login_at": "1980-08-12T22:42:36.501452",
+    "deleted_at": "2018-04-17T05:43:58.611584"
+  },
+  {
+    "customer_id": "a5dd78ef-58d2-40ca-a688-3100557d2ea7",
+    "email": "lindapatton@example.com",
+    "first_name": "DmtD",
+    "last_name": "IzxUXBaAkZNRrtrnSDwoSJTMgLqAGsreqDlFnnmf",
+    "phone_number": "+66770944735668",
+    "date_of_birth": "1968-10-08",
+    "profile_picture_url": "https://martin.com/categories/explorecategory.html",
+    "locale": "en_US",
+    "tier": "platinum",
+    "lifetime_order_count": 2000674796,
+    "lifetime_spend": 90283860612246.77,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "discover",
+      "city": "put",
+      "postal_code": "particular",
+      "country_code": "OI"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1984-04-12T23:59:27.482934",
+        "ip_address": "126.252.137.92",
+        "user_agent": "food"
+      }
+    ],
+    "created_at": "1994-08-05T22:02:34.449823",
+    "last_login_at": "1980-05-24T18:47:55.840223",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "6d27d30b-a54e-407f-9da8-d8fcf43c21e3",
+    "email": "irwinkevin@example.com",
+    "first_name": "fexLNhwLiVuLtTXPRr",
+    "last_name": "QfvpeWQhmZBCGMheaMwGPtcuN",
+    "phone_number": "+356524117204",
+    "date_of_birth": "1984-04-01",
+    "profile_picture_url": "https://callahan.org/app/explore/explorecategory.html",
+    "locale": "nl_NL",
+    "tier": "platinum",
+    "lifetime_order_count": 1375229200,
+    "lifetime_spend": 11100332228557.33,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "fine",
+      "city": "official",
+      "postal_code": "if",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2002-05-26T01:54:08.354532",
+        "ip_address": null,
+        "user_agent": "specific"
+      }
+    ],
+    "created_at": "2016-09-26T15:05:38.974113",
+    "last_login_at": "1983-05-29T16:12:23.955449",
+    "deleted_at": "1994-11-16T09:44:25.807236"
+  },
+  {
+    "customer_id": "0c9e2ebf-1399-43b7-947d-8b02e6f19341",
+    "email": "kimberly32@example.org",
+    "first_name": "DYNfAVaVBObdjfHLg",
+    "last_name": "OKkfaSeVHjmOjVynEkDMPRRthuiPTKsyu",
+    "phone_number": "+85411129286051",
+    "date_of_birth": "1956-06-16",
+    "profile_picture_url": "http://hart-curtis.net/tags/main/mainfaq.php",
+    "locale": "de_DE",
+    "tier": "bronze",
+    "lifetime_order_count": 1799633321,
+    "lifetime_spend": 58239046072980.81,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1999-08-11T06:36:46.772815",
+        "ip_address": "70.57.5.124",
+        "user_agent": "deal"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "2022-02-02T09:50:39.469951",
+        "ip_address": null,
+        "user_agent": "than"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1980-01-16T10:03:49.432036",
+        "ip_address": "40.112.230.109",
+        "user_agent": null
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "2015-02-10T01:13:37.804165",
+        "ip_address": "72.235.230.173",
+        "user_agent": "all"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1983-09-27T18:08:40.653245",
+        "ip_address": "154.68.196.152",
+        "user_agent": "reflect"
+      }
+    ],
+    "created_at": "1996-06-27T20:21:07.680277",
+    "last_login_at": "1996-06-18T11:09:53.114115",
+    "deleted_at": "1984-06-24T11:59:08.415599"
+  },
+  {
+    "customer_id": "36894df5-5064-4b17-8cf6-bc1fc5aba3dc",
+    "email": "christopher92@example.org",
+    "first_name": "BaroTXGmGDlczOqUVSSGWpgIFQqltyxDxShIoIDACAgPqyggKZdFWCNYeEHUHwVDHrqmacDiLSnVRvXcCzHaBaQLUlo",
+    "last_name": "JsIpWLzdnLyOTekYxeRZYNxbCJhMwhEiumhMeTRSgzmIMZiQjU",
+    "phone_number": "+454534538",
+    "date_of_birth": "1952-11-17",
+    "profile_picture_url": null,
+    "locale": "ja_JP",
+    "tier": "bronze",
+    "lifetime_order_count": 1118548613,
+    "lifetime_spend": 44075752252356.734,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "out",
+      "city": "fly",
+      "postal_code": "send",
+      "country_code": "KE"
+    },
+    "consent_records": [],
+    "created_at": "1997-02-27T02:14:34.473174",
+    "last_login_at": "1987-09-08T05:03:31.874023",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "f8ccc7fd-cb80-4a1e-9231-25d0fe5cb555",
+    "email": "perezlisa@example.com",
+    "first_name": "SJIPurvxVzVjVzdbQMvlHBtuJQPebZGjIkSKVABhlPpgeoTRVOYclweoUxvEotysKHVQFpncLaiyqVfEqUqNBpHnIAngN",
+    "last_name": "gqxfohhUgBRDcfXUiEDXEgVZsultXfmIgITceHAmXLwfpPthAuxIsvTrkftfChAZhhrUUqXklulbqBtvRiKjQbxTlvNHf",
+    "phone_number": "+92755804637463",
+    "date_of_birth": "1979-12-07",
+    "profile_picture_url": "http://www.baker-harmon.org/wp-contentterms.php",
+    "locale": "de_DE",
+    "tier": "platinum",
+    "lifetime_order_count": 118887027,
+    "lifetime_spend": 70320498720113.18,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "agency",
+      "city": null,
+      "postal_code": "include",
+      "country_code": "TP"
+    },
+    "consent_records": null,
+    "created_at": "2003-02-02T17:16:12.672238",
+    "last_login_at": "1977-05-22T22:10:20.151103",
+    "deleted_at": "2021-07-11T03:07:53.875170"
+  },
+  {
+    "customer_id": "b87be5f0-530b-42b4-ab3e-148c20fec728",
+    "email": "ilang@example.net",
+    "first_name": null,
+    "last_name": "TWEEEivwNzoEbDdfFglsirLegVeiSrzxFZYGFBpRHczWWskECmAhGXZJMWxTfJliIvkXoRCCnHxPJtG",
+    "phone_number": "+2539261",
+    "date_of_birth": "1975-09-07",
+    "profile_picture_url": "http://www.buckley-gilbert.org/categories/main/searchhome.php",
+    "locale": "ja_JP",
+    "tier": "silver",
+    "lifetime_order_count": 1981452792,
+    "lifetime_spend": 97164057431786.6,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "seat",
+      "city": "sport",
+      "postal_code": "beyond",
+      "country_code": "ZP"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2009-08-18T10:00:27.033678",
+        "ip_address": "159.66.158.246",
+        "user_agent": "thus"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2021-10-03T20:17:48.317312",
+        "ip_address": "214.156.51.246",
+        "user_agent": "go"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2019-01-02T21:18:49.345727",
+        "ip_address": "24.81.149.166",
+        "user_agent": "its"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2012-10-08T21:59:10.063925",
+        "ip_address": "107.172.163.162",
+        "user_agent": "yeah"
+      }
+    ],
+    "created_at": "2014-01-24T04:42:38.292331",
+    "last_login_at": "1971-05-23T16:35:43.111816",
+    "deleted_at": "2019-02-17T10:18:54.880665"
+  },
+  {
+    "customer_id": "ac06f2f6-2b25-4848-ba81-5ad9076b7108",
+    "email": "millergabriel@example.net",
+    "first_name": "VRoUyiebBJgzCrjKBjfNjXIDCaeSOgZutmuLZrpuapXXIPzIviWSNURKtVF",
+    "last_name": "OjRUexhHoSVFqQuFbBUdcsCUjEqMJzkKsgXEQlhglgwSeCiUSPptrJbTplRYLvodlAySKvHvCkhNcqSZMnKZUCFDBMXIv",
+    "phone_number": "+1201159",
+    "date_of_birth": "1978-06-06",
+    "profile_picture_url": "http://www.gentry.org/main/tagscategory.html",
+    "locale": "de_DE",
+    "tier": "bronze",
+    "lifetime_order_count": 120480471,
+    "lifetime_spend": 94231973100492.3,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2010-04-18T00:55:50.798732",
+        "ip_address": "138.138.75.180",
+        "user_agent": "heavy"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1980-07-14T05:35:32.277834",
+        "ip_address": null,
+        "user_agent": "too"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1994-02-06T11:39:54.126177",
+        "ip_address": "209.76.4.152",
+        "user_agent": "I"
+      }
+    ],
+    "created_at": "2002-08-19T15:08:52.143507",
+    "last_login_at": "2005-05-27T02:53:25.019444",
+    "deleted_at": "1981-09-04T06:15:34.721906"
+  },
+  {
+    "customer_id": "d52e9dc6-1f72-49d1-8bd5-80f15cd54776",
+    "email": "alexanderrobinson@example.com",
+    "first_name": "QklTrhkEubisPTEPWOzfPueBPofIsxoPYla",
+    "last_name": "SfDSlVbddGxUDDjRgASRMEDssiNcrbosLNgKIMetXKLMvTaKzCMI",
+    "phone_number": "+526530931098064",
+    "date_of_birth": "1950-12-02",
+    "profile_picture_url": "http://www.hudson-gordon.info/categoriesfaq.jsp",
+    "locale": "zh_CN",
+    "tier": "platinum",
+    "lifetime_order_count": 1851559608,
+    "lifetime_spend": 94672589656231.16,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "a",
+      "city": "worker",
+      "postal_code": "well",
+      "country_code": "BI"
+    },
+    "consent_records": null,
+    "created_at": "2000-05-06T21:58:46.616949",
+    "last_login_at": null,
+    "deleted_at": "2004-02-19T16:49:06.413616"
+  },
+  {
+    "customer_id": "bd024412-61db-4f0a-a485-a54fd2e7bfc2",
+    "email": "marycunningham@example.net",
+    "first_name": "iAAkEbvwiYlnsbdrNBxuKaTLrOHqmKAQJrETxYHsImXcYBsWrpmghKwroTfiZcAVwxtqiYFnUplqdCNe",
+    "last_name": "xFInhjkliduJTeY",
+    "phone_number": "+4495345",
+    "date_of_birth": "1999-07-17",
+    "profile_picture_url": "http://www.brown.biz/posts/tagsregister.html",
+    "locale": null,
+    "tier": "bronze",
+    "lifetime_order_count": 455373454,
+    "lifetime_spend": 19702307750440.785,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "able",
+      "city": "whether",
+      "postal_code": "group",
+      "country_code": "ZZ"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2019-07-18T03:22:41.515125",
+        "ip_address": "140.237.92.176",
+        "user_agent": "economy"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2016-07-29T00:21:19.494658",
+        "ip_address": "160.42.29.160",
+        "user_agent": "space"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2026-03-24T21:36:20.904316",
+        "ip_address": "105.247.13.82",
+        "user_agent": "white"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1975-04-28T14:30:28.600179",
+        "ip_address": "139.166.227.66",
+        "user_agent": "guess"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1989-04-17T09:49:54.142851",
+        "ip_address": "11.173.190.137",
+        "user_agent": "scene"
+      }
+    ],
+    "created_at": "1981-08-25T14:44:30.240681",
+    "last_login_at": "2015-11-25T10:20:03.941617",
+    "deleted_at": "1982-05-15T17:30:28.438874"
+  },
+  {
+    "customer_id": "aafaf155-abd5-4554-b9c5-fe3b7ac9a9dd",
+    "email": "hcole@example.com",
+    "first_name": "EyJapVBlgomnrAaRdcIHndocuxhiycAbVaNODqtLYqPNvbDapqoCJzVPaxoYwgJKVCqwsvtXcxMSEiqlIeVxvGrJLeIztUf",
+    "last_name": "RPBNDdleEbfkzTSkLBvLblvolMJYCelNeldxcdAVuMaBkyCcjvvhDaHDBFbcnC",
+    "phone_number": "+78354372",
+    "date_of_birth": "1959-08-14",
+    "profile_picture_url": "http://www.castro.biz/bloghomepage.htm",
+    "locale": "ko_KR",
+    "tier": "silver",
+    "lifetime_order_count": 1287659207,
+    "lifetime_spend": 5730636465950.711,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "tend",
+      "city": "serious",
+      "postal_code": "her",
+      "country_code": "PG"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2020-10-11T09:42:33.680234",
+        "ip_address": "188.42.127.233",
+        "user_agent": "choice"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1996-05-10T01:57:35.314215",
+        "ip_address": "162.106.132.165",
+        "user_agent": "him"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2004-06-07T17:18:56.354526",
+        "ip_address": "124.100.255.237",
+        "user_agent": "rather"
+      }
+    ],
+    "created_at": "1975-10-16T07:20:37.410887",
+    "last_login_at": "1998-01-08T22:44:24.866475",
+    "deleted_at": "1987-05-10T00:55:06.970978"
+  },
+  {
+    "customer_id": "81fc1065-2787-4ae1-afaf-fb8e6ab083d5",
+    "email": "brownryan@example.net",
+    "first_name": null,
+    "last_name": "lGnUy",
+    "phone_number": "+264881139954975",
+    "date_of_birth": "1968-11-03",
+    "profile_picture_url": "http://www.anderson-ortiz.com/categoryprivacy.htm",
+    "locale": "de_DE",
+    "tier": "silver",
+    "lifetime_order_count": 203197071,
+    "lifetime_spend": 20309887465402.055,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "myself",
+      "city": "room",
+      "postal_code": "mind",
+      "country_code": "WE"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1985-02-02T10:33:50.659695",
+        "ip_address": null,
+        "user_agent": "debate"
+      }
+    ],
+    "created_at": "1970-02-27T12:42:09.815526",
+    "last_login_at": "2010-08-17T08:46:33.246279",
+    "deleted_at": "1983-08-31T22:22:15.261433"
+  },
+  {
+    "customer_id": "993b530e-0574-4936-8586-885dfe8ab407",
+    "email": "tlee@example.net",
+    "first_name": null,
+    "last_name": "RjspGDWKZLLPztunkaySKsXtxXhRRolQhWvyGJiAjlhUPgwZeOmLOKJkROZHrFZCnfeIZfZBtqJFazZlcgfkbvr",
+    "phone_number": "+12812552419",
+    "date_of_birth": "1950-05-03",
+    "profile_picture_url": "http://warren-fletcher.com/blog/postshome.php",
+    "locale": "ja_JP",
+    "tier": "platinum",
+    "lifetime_order_count": 1112172230,
+    "lifetime_spend": 6280057410942.586,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "firm",
+      "city": "great",
+      "postal_code": "share",
+      "country_code": "YF"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1976-05-30T05:33:14.029114",
+        "ip_address": "59.199.48.7",
+        "user_agent": null
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1997-05-27T18:22:02.950052",
+        "ip_address": null,
+        "user_agent": "product"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1998-10-30T15:08:07.019256",
+        "ip_address": "101.138.148.139",
+        "user_agent": "interview"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2008-07-16T07:50:41.851793",
+        "ip_address": "165.164.164.230",
+        "user_agent": "far"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1993-12-17T04:26:54.376868",
+        "ip_address": null,
+        "user_agent": "father"
+      }
+    ],
+    "created_at": "2002-12-13T19:42:35.609622",
+    "last_login_at": "2009-05-14T13:24:40.898967",
+    "deleted_at": "2022-01-07T22:25:28.197752"
+  },
+  {
+    "customer_id": "5f0208bc-2868-4e39-be41-c4d692a15dac",
+    "email": "jthomas@example.com",
+    "first_name": "JOStgaTHIwtKIDzgRvDKKJrVGdqnIXM",
+    "last_name": null,
+    "phone_number": "+63466816068",
+    "date_of_birth": "1961-01-29",
+    "profile_picture_url": "http://acosta-garcia.net/postsabout.asp",
+    "locale": "nl_NL",
+    "tier": "platinum",
+    "lifetime_order_count": 2109382298,
+    "lifetime_spend": 67100652866482.48,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "change",
+      "city": "black",
+      "postal_code": "her",
+      "country_code": "VO"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1992-02-06T20:53:21.164006",
+        "ip_address": "70.97.202.104",
+        "user_agent": "spring"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2020-07-14T09:32:10.504424",
+        "ip_address": "49.88.89.178",
+        "user_agent": "push"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2014-07-05T15:29:07.735265",
+        "ip_address": "74.238.8.48",
+        "user_agent": "leader"
+      }
+    ],
+    "created_at": "1996-02-27T01:07:00.152333",
+    "last_login_at": "2024-05-09T09:45:06.739118",
+    "deleted_at": "1987-01-22T02:26:13.224514"
+  },
+  {
+    "customer_id": "111ec769-6d74-4d05-bfae-d3c96c001440",
+    "email": "haasrobert@example.com",
+    "first_name": "PEqJEXDdFadiWAdcLMeLXhaWfbMmyWIUGVMBqH",
+    "last_name": "zVXeIYJFROTNPBs",
+    "phone_number": "+9388535471754",
+    "date_of_birth": null,
+    "profile_picture_url": "https://cruz.com/categoryterms.htm",
+    "locale": "pt_BR",
+    "tier": "bronze",
+    "lifetime_order_count": 504358506,
+    "lifetime_spend": 61034669955059.88,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": "thing",
+      "postal_code": "buy",
+      "country_code": "QY"
+    },
+    "consent_records": [],
+    "created_at": "1973-06-15T13:36:29.955454",
+    "last_login_at": "2017-04-11T08:25:03.933971",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "83032bd3-a92e-4e01-aa47-79806d556f59",
+    "email": "donnamercado@example.org",
+    "first_name": "FqjeoYNzwmrNmIyFiOyylHEGOEQayOHZlbfeDDjWztVcGipJgazDxcHaXkYR",
+    "last_name": "ZriqYV",
+    "phone_number": "+414538867842275",
+    "date_of_birth": "1967-06-17",
+    "profile_picture_url": "http://johnson-knapp.com/listsearch.htm",
+    "locale": "de_DE",
+    "tier": "bronze",
+    "lifetime_order_count": 1138665345,
+    "lifetime_spend": 48439067366238.4,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "media",
+      "city": "message",
+      "postal_code": "quite",
+      "country_code": "MW"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1978-09-29T11:04:13.677522",
+        "ip_address": "62.206.202.193",
+        "user_agent": "up"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2003-01-21T14:50:35.933923",
+        "ip_address": "25.247.26.103",
+        "user_agent": "change"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2009-12-13T13:00:27.806808",
+        "ip_address": "120.249.59.135",
+        "user_agent": "take"
+      }
+    ],
+    "created_at": "2017-02-21T14:04:02.647756",
+    "last_login_at": null,
+    "deleted_at": "2015-10-04T18:16:50.312597"
+  },
+  {
+    "customer_id": "e0327272-0736-4c2a-a21c-d6c33287c5fe",
+    "email": "danielmatthews@example.net",
+    "first_name": "AQNeRudyLFSKTfIylyLigscZfEHSUojECGQKxbwonOXXFgXdWnpPkHsdhUGioaccL",
+    "last_name": "oHAdYyFyLHrphTlRkApYrBxYOp",
+    "phone_number": "+11404796229",
+    "date_of_birth": "1993-11-11",
+    "profile_picture_url": "https://galloway-ayers.com/list/tags/blogmain.htm",
+    "locale": "en_US",
+    "tier": "platinum",
+    "lifetime_order_count": 1243329343,
+    "lifetime_spend": 18675764036955.09,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "item",
+      "city": "of",
+      "postal_code": null,
+      "country_code": "GE"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1999-09-12T17:21:16.342791",
+        "ip_address": "190.169.39.191",
+        "user_agent": "two"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2025-05-29T06:41:26.836014",
+        "ip_address": "174.203.162.41",
+        "user_agent": "case"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1972-09-08T20:15:30.057557",
+        "ip_address": "104.205.65.118",
+        "user_agent": null
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1999-08-07T16:55:31.044647",
+        "ip_address": "158.4.83.5",
+        "user_agent": null
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1970-03-03T20:18:59.900226",
+        "ip_address": "21.179.241.51",
+        "user_agent": null
+      }
+    ],
+    "created_at": "1997-02-12T08:15:59.435245",
+    "last_login_at": null,
+    "deleted_at": "2015-10-05T16:48:13.572907"
+  },
+  {
+    "customer_id": "a9669fd4-7080-41f3-b47c-728d84aa4907",
+    "email": "randall18@example.com",
+    "first_name": "cMpIcYJbqzHXdlsoPXKGavGtISdSOjrRfLqigsjvboxrEEdMGGOyHvtXvCFvFoIvjUKHmcGRjyIHfINXTiUkDNr",
+    "last_name": "FmblJeCzYxNYgyNpnUAUzdBwvLTiffuYTZxHHXtZqcVnBTOnCpGBuvgEamziYKICfveqZgjGfXEWHluaQ",
+    "phone_number": null,
+    "date_of_birth": "1977-08-22",
+    "profile_picture_url": "https://wilson.org/blog/explorepost.html",
+    "locale": "fr_FR",
+    "tier": "platinum",
+    "lifetime_order_count": 2009924975,
+    "lifetime_spend": 95683149677806.72,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": "inside",
+      "postal_code": "want",
+      "country_code": null
+    },
+    "consent_records": null,
+    "created_at": "1976-11-22T06:50:51.517309",
+    "last_login_at": "2007-03-27T00:30:27.204981",
+    "deleted_at": "1985-06-29T01:25:16.595973"
+  },
+  {
+    "customer_id": "5ee9bb0f-8ec6-4166-8104-4877f75a05c5",
+    "email": "kevinvargas@example.com",
+    "first_name": "ZIWPgZbHZPIiVxGoBSOyMZDnAvuHVpiqUsIMMNkBKezHlpmLc",
+    "last_name": "vYZRbexQSqnQ",
+    "phone_number": "+984140501610",
+    "date_of_birth": "1967-04-09",
+    "profile_picture_url": "https://cruz-davis.com/wp-content/tagssearch.php",
+    "locale": "ko_KR",
+    "tier": "platinum",
+    "lifetime_order_count": 270832141,
+    "lifetime_spend": 29849562917121.695,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": "fine",
+      "country_code": "BA"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1998-12-27T20:47:44.186810",
+        "ip_address": "9.32.19.104",
+        "user_agent": "difference"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1997-09-28T07:36:22.975404",
+        "ip_address": "79.180.55.158",
+        "user_agent": "woman"
+      }
+    ],
+    "created_at": "1990-11-17T00:23:44.426498",
+    "last_login_at": "1975-04-01T12:24:01.880846",
+    "deleted_at": "2015-03-15T15:05:41.390125"
+  },
+  {
+    "customer_id": "a931c383-73d4-4627-9569-24d41b2f6c95",
+    "email": "samantha30@example.org",
+    "first_name": "pEKHUNWyzmvocMLbMjUR",
+    "last_name": "hxjUo",
+    "phone_number": "+340554682",
+    "date_of_birth": "2006-09-21",
+    "profile_picture_url": "https://www.good-henderson.biz/blogcategory.jsp",
+    "locale": "nl_NL",
+    "tier": "silver",
+    "lifetime_order_count": 75036060,
+    "lifetime_spend": 18270936342824.02,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "including",
+      "city": "sea",
+      "postal_code": "allow",
+      "country_code": "LV"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1988-05-30T17:12:24.963196",
+        "ip_address": "208.54.222.26",
+        "user_agent": "best"
+      }
+    ],
+    "created_at": "1973-10-18T16:20:40.158567",
+    "last_login_at": null,
+    "deleted_at": "2008-06-02T06:42:58.074867"
+  },
+  {
+    "customer_id": "4e888742-9c08-4742-9051-44536abddabf",
+    "email": "nortondaniel@example.org",
+    "first_name": "bxqzEwNGrmG",
+    "last_name": "wnZXhpCVg",
+    "phone_number": "+79775215965313",
+    "date_of_birth": "1935-10-27",
+    "profile_picture_url": "https://www.ward.org/list/app/searchprivacy.php",
+    "locale": null,
+    "tier": "silver",
+    "lifetime_order_count": 234791316,
+    "lifetime_spend": 2524376065001.41,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "next",
+      "city": "design",
+      "postal_code": "medical",
+      "country_code": "HZ"
+    },
+    "consent_records": [],
+    "created_at": "1970-08-21T04:09:45.368570",
+    "last_login_at": "2018-01-24T06:01:25.317826",
+    "deleted_at": "2018-02-04T04:05:51.635456"
+  },
+  {
+    "customer_id": "703e7200-a8ce-40fd-8194-899d70bed5f2",
+    "email": "angelabenjamin@example.net",
+    "first_name": "co",
+    "last_name": "KUjtvXghputHgcydHPYcqwWBFMbuTwQnmKgBbXxQEyWxaZLMgGTEIsXbIqmcfcNaMPXmFvWHWoZiCtARiTiLCPrLxXVULxOlQmBy",
+    "phone_number": "+200846698131417",
+    "date_of_birth": "1989-08-26",
+    "profile_picture_url": "http://www.tucker.com/postsindex.html",
+    "locale": "en_GB",
+    "tier": "bronze",
+    "lifetime_order_count": 1831530933,
+    "lifetime_spend": 34449961954704.367,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "smile",
+      "city": "cut",
+      "postal_code": "probably",
+      "country_code": "UE"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2025-08-02T05:00:58.240224",
+        "ip_address": "107.165.247.111",
+        "user_agent": "condition"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2013-12-01T03:48:43.239146",
+        "ip_address": "10.174.143.58",
+        "user_agent": "between"
+      }
+    ],
+    "created_at": "2025-08-14T07:19:55.931409",
+    "last_login_at": "1991-06-24T03:52:30.589158",
+    "deleted_at": "1992-08-18T00:25:40.259575"
+  },
+  {
+    "customer_id": "60903a3c-e695-4c2c-9ba8-12c428543fec",
+    "email": "shepardnathan@example.org",
+    "first_name": "YbkSHTZFXIlVUbmgMsbsRDqUjDDedfBBoKCKhXtTXpQTuZWIHr",
+    "last_name": "HGJgieytFsOTAJnczoDtuwJhGdCXwyLlyzxrXwjLAkneDhzepIForeIltGOLtGaGjEpSUGwxajgkeKnPKNiZqVKdiAihlJAEOMIm",
+    "phone_number": "+4904830",
+    "date_of_birth": "1996-07-20",
+    "profile_picture_url": "http://smith-henry.biz/main/listpost.htm",
+    "locale": "ko_KR",
+    "tier": "gold",
+    "lifetime_order_count": 737219184,
+    "lifetime_spend": 24464785497532.75,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "individual",
+      "city": "TV",
+      "postal_code": "room",
+      "country_code": null
+    },
+    "consent_records": null,
+    "created_at": "2025-01-01T21:41:24.255739",
+    "last_login_at": "1986-08-16T08:49:51.412931",
+    "deleted_at": "2010-03-01T04:34:07.590789"
+  },
+  {
+    "customer_id": "8d8df72c-551a-4ba9-ac54-a28958abf514",
+    "email": "johnyates@example.net",
+    "first_name": null,
+    "last_name": "nQcralwDveSDhNZXskoySZABQsP",
+    "phone_number": "+35802719868",
+    "date_of_birth": "1933-04-28",
+    "profile_picture_url": "https://www.brown.info/category/categorymain.html",
+    "locale": "ja_JP",
+    "tier": "gold",
+    "lifetime_order_count": 246234960,
+    "lifetime_spend": 10011845590258.705,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1986-10-25T06:54:11.848315",
+        "ip_address": "38.244.61.26",
+        "user_agent": "learn"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1970-05-01T15:28:59.240401",
+        "ip_address": "91.35.87.146",
+        "user_agent": "finish"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1990-07-19T18:54:10.450287",
+        "ip_address": "125.218.36.133",
+        "user_agent": "pattern"
+      }
+    ],
+    "created_at": "2026-02-13T17:39:24.956800",
+    "last_login_at": "1980-06-10T11:11:45.812739",
+    "deleted_at": "2004-12-16T23:12:33.424641"
+  },
+  {
+    "customer_id": "986de20a-c207-4c6c-9bcc-61f189cb8f6e",
+    "email": "april91@example.org",
+    "first_name": "EdvRMrCUkyAGuvNgYAbwsHOiLjjUneFyMRXMaEWhH",
+    "last_name": "fXpYazwTnVDHtrmbphZnvOTdcLtz",
+    "phone_number": "+73885568622",
+    "date_of_birth": "2005-10-01",
+    "profile_picture_url": "https://barajas-jones.com/main/tags/categoriesfaq.html",
+    "locale": "en_US",
+    "tier": "gold",
+    "lifetime_order_count": 1540783695,
+    "lifetime_spend": 17593803272926.355,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": "necessary",
+      "postal_code": "peace",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2013-02-28T10:10:29.165531",
+        "ip_address": "74.248.56.196",
+        "user_agent": "notice"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1972-12-07T02:26:44.798459",
+        "ip_address": "14.65.251.71",
+        "user_agent": "as"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1993-04-24T04:44:38.760075",
+        "ip_address": "220.61.191.14",
+        "user_agent": "enter"
+      }
+    ],
+    "created_at": "2004-01-27T11:37:01.302936",
+    "last_login_at": "1996-06-08T05:58:45.362957",
+    "deleted_at": "2009-06-01T14:53:16.262859"
+  },
+  {
+    "customer_id": "aa122b20-4cdf-41b0-9cb6-d3db31aebd37",
+    "email": "acoleman@example.net",
+    "first_name": "XgyqDJUfQrtMHSgvs",
+    "last_name": "UXmRFSSl",
+    "phone_number": "+535796390952",
+    "date_of_birth": "1972-02-06",
+    "profile_picture_url": "http://martinez.info/app/categoriescategory.php",
+    "locale": "ko_KR",
+    "tier": "bronze",
+    "lifetime_order_count": 56732495,
+    "lifetime_spend": 73287237921700.9,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "western",
+      "city": "two",
+      "postal_code": "head",
+      "country_code": null
+    },
+    "consent_records": [],
+    "created_at": "1974-10-10T15:50:47.032199",
+    "last_login_at": "1991-12-06T18:25:09.664203",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "a6e71066-ddd6-4bb2-9920-594c3b51eed5",
+    "email": "andrea04@example.org",
+    "first_name": "sfOIeYsaF",
+    "last_name": null,
+    "phone_number": "+8479031095842",
+    "date_of_birth": "1938-05-31",
+    "profile_picture_url": "http://larson.com/wp-contentsearch.jsp",
+    "locale": null,
+    "tier": "platinum",
+    "lifetime_order_count": 72619673,
+    "lifetime_spend": 90614389795798.48,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "film",
+      "city": "cut",
+      "postal_code": "perform",
+      "country_code": "TU"
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "1984-03-08T05:01:42.865887",
+        "ip_address": "119.24.40.2",
+        "user_agent": "black"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2013-11-30T06:39:02.598300",
+        "ip_address": "11.84.138.197",
+        "user_agent": "tonight"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1984-09-17T06:56:00.116017",
+        "ip_address": "35.63.234.221",
+        "user_agent": null
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "1973-02-07T10:51:30.718623",
+        "ip_address": "222.224.235.72",
+        "user_agent": "phone"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1973-02-01T09:36:04.049517",
+        "ip_address": "196.209.172.204",
+        "user_agent": "perhaps"
+      }
+    ],
+    "created_at": "2002-09-04T10:15:17.368624",
+    "last_login_at": "2005-08-11T07:59:57.887742",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "9c253f8a-c38d-423c-85eb-d3dc07fa63ca",
+    "email": "grant98@example.org",
+    "first_name": "JhHrHJEvYPpdkCgXYNDmyntDElYXLevmDyxmqSDWnxFtkcRgHYbHaPSxQrxHhnEXMYKSLyRZhTiJXcvYnaA",
+    "last_name": "PXrnJDTHezsDPPatD",
+    "phone_number": "+8176262573306",
+    "date_of_birth": "1990-10-14",
+    "profile_picture_url": "http://www.holloway.com/categories/posts/listhome.php",
+    "locale": "ja_JP",
+    "tier": "silver",
+    "lifetime_order_count": 137026110,
+    "lifetime_spend": 99069817351854.98,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": "paper",
+      "postal_code": "this",
+      "country_code": "UV"
+    },
+    "consent_records": [],
+    "created_at": "1983-09-01T07:13:53.121504",
+    "last_login_at": "2016-05-08T05:10:04.990467",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "f5f01aef-b0f2-4330-9391-1842f284687c",
+    "email": "josephburke@example.com",
+    "first_name": "IvpYNRVvwnSLxQZnVngAIKHQeKBXVnPqumAVhxdMgPXjOjcWzsULZqMnRFJJt",
+    "last_name": "RbfXqIAPnlzHMAkqJpuEl",
+    "phone_number": "+4848216858",
+    "date_of_birth": "1948-06-01",
+    "profile_picture_url": "https://daniels.com/app/wp-contentpost.htm",
+    "locale": "pt_BR",
+    "tier": "silver",
+    "lifetime_order_count": 672574446,
+    "lifetime_spend": 78521219499579.67,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "expert",
+      "postal_code": "bit",
+      "country_code": "SV"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1991-01-27T14:02:01.808576",
+        "ip_address": "26.56.204.29",
+        "user_agent": "item"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2012-06-19T11:41:19.564124",
+        "ip_address": "191.223.237.17",
+        "user_agent": "kind"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1987-02-08T04:30:18.416895",
+        "ip_address": "113.218.96.112",
+        "user_agent": "executive"
+      },
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2013-07-07T04:08:14.173494",
+        "ip_address": "121.30.146.22",
+        "user_agent": "something"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2011-11-13T20:19:23.854345",
+        "ip_address": "32.181.7.37",
+        "user_agent": "brother"
+      }
+    ],
+    "created_at": "1977-08-11T05:08:46.924310",
+    "last_login_at": "1990-06-03T05:55:22.803081",
+    "deleted_at": "1984-03-04T15:02:08.550517"
+  },
+  {
+    "customer_id": "da64300b-afb6-4c12-aee3-141e33696073",
+    "email": "millerlisa@example.com",
+    "first_name": "AktithpenGFTuAWAgrhfjciDwyV",
+    "last_name": "bXRkhcxFLefDLLOZuIXyKMeKWCKipnDkVaDLyVKzkaIIyqStLOxYqVctZpSMDKZKsc",
+    "phone_number": "+6800505281",
+    "date_of_birth": null,
+    "profile_picture_url": "http://rogers.com/appindex.asp",
+    "locale": "pt_BR",
+    "tier": "gold",
+    "lifetime_order_count": 1620114101,
+    "lifetime_spend": 44894022884610.93,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "support",
+      "city": "member",
+      "postal_code": "offer",
+      "country_code": "OG"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2004-12-14T01:24:37.598822",
+        "ip_address": "93.43.130.137",
+        "user_agent": "happen"
+      }
+    ],
+    "created_at": "2006-08-17T17:47:54.214387",
+    "last_login_at": null,
+    "deleted_at": "1982-08-06T22:44:38.385307"
+  },
+  {
+    "customer_id": "5e508e58-0fd9-40ee-8cbd-87c3433b3d4c",
+    "email": "shellymarshall@example.org",
+    "first_name": "kPLVffJszZUGeTxFVMvlChuUwjCsPZMaKuEhLOZcRuOzqWWOzUSHEPrjWxqwAOcoHarIifbwIQPvZgcgEjatiqOhqDduSkIZjTRd",
+    "last_name": "oEDXDUGTzBWncS",
+    "phone_number": "+443948130963932",
+    "date_of_birth": null,
+    "profile_picture_url": "http://barber.com/tagregister.htm",
+    "locale": "en_US",
+    "tier": "bronze",
+    "lifetime_order_count": 1584611514,
+    "lifetime_spend": 17914417650978.086,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "single",
+      "postal_code": "pressure",
+      "country_code": "CX"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2015-05-10T17:21:06.107440",
+        "ip_address": "119.75.131.143",
+        "user_agent": null
+      }
+    ],
+    "created_at": "2013-05-03T00:52:05.920833",
+    "last_login_at": "1994-01-04T18:02:05.635411",
+    "deleted_at": "1986-01-13T05:12:09.366144"
+  },
+  {
+    "customer_id": "bff1dd48-5027-4f51-857c-b45e5b540a05",
+    "email": "carterjacqueline@example.com",
+    "first_name": "LvdZQwIMVppQaBYeiKNLnjWgzINLPtLCJ",
+    "last_name": "SmeqczrWnMbrHIMOzqZgaLbtryazqTqjfmIZLmqGdzufNuoCdluihaNaLLZHgoqMpGjCcWlEMkyqXCBYTAvLeitdww",
+    "phone_number": "+72889589043",
+    "date_of_birth": "1940-08-29",
+    "profile_picture_url": "http://www.rodriguez.info/list/postsfaq.html",
+    "locale": "ja_JP",
+    "tier": "gold",
+    "lifetime_order_count": 160819224,
+    "lifetime_spend": 31588487451674.473,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "price",
+      "city": null,
+      "postal_code": "maybe",
+      "country_code": "LW"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2011-01-05T03:20:33.105602",
+        "ip_address": "182.52.219.179",
+        "user_agent": "light"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1984-06-03T12:42:32.961388",
+        "ip_address": "155.160.195.184",
+        "user_agent": "either"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2014-02-02T20:49:10.926484",
+        "ip_address": "19.61.108.153",
+        "user_agent": null
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1994-04-26T22:02:06.144895",
+        "ip_address": "84.95.180.176",
+        "user_agent": "fill"
+      }
+    ],
+    "created_at": "2020-07-06T02:14:50.393006",
+    "last_login_at": "2004-07-31T13:21:53.940698",
+    "deleted_at": "2023-09-29T07:39:56.742098"
+  },
+  {
+    "customer_id": "e3736dcf-9398-4a40-8ce0-4748d163fbf3",
+    "email": "kmartin@example.org",
+    "first_name": "QQswzeuY",
+    "last_name": "KEyItcUjzCpkyf",
+    "phone_number": "+7950707982669",
+    "date_of_birth": "1949-05-26",
+    "profile_picture_url": "http://brown.com/search/tags/listlogin.php",
+    "locale": "fr_FR",
+    "tier": "platinum",
+    "lifetime_order_count": 218322292,
+    "lifetime_spend": 56618599317360.805,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "agency",
+      "city": "someone",
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [],
+    "created_at": "2001-03-10T15:42:18.775128",
+    "last_login_at": null,
+    "deleted_at": "1999-06-22T11:55:17.091828"
+  },
+  {
+    "customer_id": "bcc372f4-1c0f-4868-bca1-e9a68ccac469",
+    "email": "barbararoy@example.net",
+    "first_name": "YUMAvcYMlYhBsQPucHBRfjxBTtueuFGxCxqrGEpialhhLmcUfsHqBlRM",
+    "last_name": "qtzqYFrHdhhIYnJJJrXVOoJaEmQBXQdfc",
+    "phone_number": "+57654704465",
+    "date_of_birth": "1936-03-09",
+    "profile_picture_url": "http://www.jackson.com/list/searchsearch.php",
+    "locale": "fr_FR",
+    "tier": "bronze",
+    "lifetime_order_count": 1719501482,
+    "lifetime_spend": 80037090338410.95,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "produce",
+      "city": "explain",
+      "postal_code": "poor",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2016-04-19T23:04:57.118715",
+        "ip_address": "36.224.131.147",
+        "user_agent": "establish"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2008-09-02T07:43:17.199219",
+        "ip_address": "220.39.171.197",
+        "user_agent": "record"
+      }
+    ],
+    "created_at": "2021-03-29T04:41:34.772054",
+    "last_login_at": "2023-09-15T03:23:04.613330",
+    "deleted_at": "1974-06-10T09:35:42.464605"
+  },
+  {
+    "customer_id": "f5a3a85e-b6d7-4fff-b482-d71bb5a6a53f",
+    "email": "rporter@example.net",
+    "first_name": "tQwsUTJqLqoIEnUunBhgBlWkjBkxBuliYwYSpmCXUlIHGxDHusznHakSmiFDZTVnxNvRbDsoMVZlVowrPBCQRm",
+    "last_name": "guWyOwpIibMrgAlOhXQViNsydRMbnCFonXCLDYDDetdvFFNZsZAWziqSyhFK",
+    "phone_number": "+731989746",
+    "date_of_birth": "1994-02-14",
+    "profile_picture_url": "https://www.boyd-smith.com/wp-content/postsregister.php",
+    "locale": "es_ES",
+    "tier": "bronze",
+    "lifetime_order_count": 811582606,
+    "lifetime_spend": 79532316277790.92,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "option",
+      "city": "your",
+      "postal_code": "within",
+      "country_code": "XQ"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2005-10-19T10:59:00.442595",
+        "ip_address": "196.55.154.206",
+        "user_agent": "full"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "2019-01-17T05:59:30.414499",
+        "ip_address": "180.208.176.215",
+        "user_agent": "include"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2010-07-24T04:39:54.971416",
+        "ip_address": "62.60.168.252",
+        "user_agent": "notice"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1974-09-27T09:31:43.780529",
+        "ip_address": "46.115.153.19",
+        "user_agent": null
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1971-04-28T18:20:14.827793",
+        "ip_address": "118.238.158.225",
+        "user_agent": "wear"
+      }
+    ],
+    "created_at": "2007-02-21T14:14:43.392848",
+    "last_login_at": "2019-03-22T00:30:16.214250",
+    "deleted_at": "1998-05-14T05:49:47.665491"
+  },
+  {
+    "customer_id": "b2c00161-5107-4dc7-8b17-30d014fab0bd",
+    "email": "chris69@example.com",
+    "first_name": "hVwqCXLCFFuBdHZAoVlzrbCoTrHEpgQjJiqMMrAIClZAGgjnniNqYMuJ",
+    "last_name": null,
+    "phone_number": "+22494232",
+    "date_of_birth": "1935-07-06",
+    "profile_picture_url": "http://horn-richardson.com/search/wp-content/searchabout.jsp",
+    "locale": "pt_BR",
+    "tier": "silver",
+    "lifetime_order_count": 239796566,
+    "lifetime_spend": 77750346112915.48,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "use",
+      "city": "discover",
+      "postal_code": "defense",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2018-12-19T20:37:23.625436",
+        "ip_address": "162.56.162.103",
+        "user_agent": "machine"
+      }
+    ],
+    "created_at": "1976-06-24T12:48:45.791980",
+    "last_login_at": "1999-11-17T03:12:19.119256",
+    "deleted_at": "1974-01-23T17:34:02.478620"
+  },
+  {
+    "customer_id": "29dcdb73-7feb-41db-880c-e7781408677a",
+    "email": "andrea59@example.com",
+    "first_name": "GgfAAxiaQivEwhyxwDWYHApW",
+    "last_name": "dTiwpAfoUFIRnBQWsUEhGREKgLyTgJuEQoucsrkjAoCAsDLhlHFuD",
+    "phone_number": "+8583756",
+    "date_of_birth": "1946-02-26",
+    "profile_picture_url": "http://andrews.com/listregister.jsp",
+    "locale": "ko_KR",
+    "tier": "gold",
+    "lifetime_order_count": 844272273,
+    "lifetime_spend": 6477648078658.027,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "pull",
+      "city": "guess",
+      "postal_code": "affect",
+      "country_code": "EH"
+    },
+    "consent_records": [],
+    "created_at": "1997-06-18T16:22:04.305785",
+    "last_login_at": "1993-03-31T01:52:02.466145",
+    "deleted_at": "2002-07-18T06:06:14.747374"
+  },
+  {
+    "customer_id": "e5663967-472d-445b-b273-3c0b8d82843e",
+    "email": "jefferyperez@example.org",
+    "first_name": "cfmIMAFQApHSYgVbloYSQYiDjeLPmvfeXuJTmlV",
+    "last_name": "ideffGOOgcldDbapgZBZrcxVY",
+    "phone_number": "+3400597397",
+    "date_of_birth": "2004-04-06",
+    "profile_picture_url": "http://johnson-bailey.com/explorefaq.html",
+    "locale": "pt_BR",
+    "tier": "platinum",
+    "lifetime_order_count": 94819519,
+    "lifetime_spend": 24158905047160.316,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2000-08-29T19:31:06.023963",
+        "ip_address": "186.47.209.71",
+        "user_agent": null
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "1997-05-10T12:05:02.900943",
+        "ip_address": "188.74.158.179",
+        "user_agent": "attorney"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1976-10-24T22:52:00.786363",
+        "ip_address": "76.184.142.108",
+        "user_agent": "about"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1983-01-09T20:40:27.929540",
+        "ip_address": null,
+        "user_agent": "response"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1985-03-22T14:21:03.992498",
+        "ip_address": "52.85.144.81",
+        "user_agent": null
+      }
+    ],
+    "created_at": "1993-10-28T07:00:00.539785",
+    "last_login_at": null,
+    "deleted_at": "1970-10-11T22:25:45.095336"
+  },
+  {
+    "customer_id": "b5b91f23-afb4-4b22-b3b3-27a1ef5b8523",
+    "email": "taylortamara@example.com",
+    "first_name": "mXIzYtlCnKMbqZkXQiuGMxeZrPJtSLdBQEEcxXHAGwhVGSTaYzLredNrBGIKtQlMVYyptlYLYnCWKGd",
+    "last_name": "BrpvaqjqLNGpbPZxGISmMLjLsBnsmRsScUJPJUOFPGRlADhGYxiOrSAtpZoYKJoq",
+    "phone_number": "+8658836167",
+    "date_of_birth": "1939-07-14",
+    "profile_picture_url": "http://www.lawson.com/explore/listsearch.htm",
+    "locale": "en_GB",
+    "tier": "gold",
+    "lifetime_order_count": 2026210320,
+    "lifetime_spend": 77094735404484.69,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "almost",
+      "city": "increase",
+      "postal_code": "per",
+      "country_code": "GW"
+    },
+    "consent_records": null,
+    "created_at": "1996-09-15T19:24:00.517153",
+    "last_login_at": "2022-10-12T09:44:39.534319",
+    "deleted_at": "2020-07-16T12:13:24.280922"
+  },
+  {
+    "customer_id": "da6ffd56-83e4-4cad-945b-9cef2b409ce0",
+    "email": "xbrennan@example.com",
+    "first_name": "NapjljvbrOBSTftAXpGUAJCCkACEdLTQtBxjcxcpGBfkYWUbZGTiehTALDFlxDbtfk",
+    "last_name": "CSbnDQCZtjanaCaHshXsGtFhRKsQ",
+    "phone_number": "+49917835519814",
+    "date_of_birth": "2001-08-07",
+    "profile_picture_url": "https://perez-meadows.net/list/postsmain.jsp",
+    "locale": "en_GB",
+    "tier": "bronze",
+    "lifetime_order_count": 308570233,
+    "lifetime_spend": 85683326881460.27,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "law",
+      "city": "hour",
+      "postal_code": "particular",
+      "country_code": "UY"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2005-03-14T11:09:07.955966",
+        "ip_address": "37.231.1.221",
+        "user_agent": "guess"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1981-11-30T16:45:44.064240",
+        "ip_address": "198.140.85.45",
+        "user_agent": "whatever"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2006-10-28T03:10:22.930117",
+        "ip_address": "91.175.48.10",
+        "user_agent": "feel"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "2011-11-15T15:05:14.403859",
+        "ip_address": "109.221.63.81",
+        "user_agent": "individual"
+      }
+    ],
+    "created_at": "1984-03-26T12:46:37.629080",
+    "last_login_at": "2010-06-04T14:48:47.453966",
+    "deleted_at": "2022-01-01T17:47:39.333822"
+  },
+  {
+    "customer_id": "a645487d-46bc-4822-b889-5096f8580e06",
+    "email": "wagnercharles@example.org",
+    "first_name": null,
+    "last_name": "MxTDLwEOTUZiXVMVweyFQNTtTcedLAOKPAJ",
+    "phone_number": "+390049488057",
+    "date_of_birth": "1999-10-27",
+    "profile_picture_url": "https://romero.com/posts/tagterms.htm",
+    "locale": "en_GB",
+    "tier": "platinum",
+    "lifetime_order_count": 567996494,
+    "lifetime_spend": 24365423103313.656,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "realize",
+      "city": "environmental",
+      "postal_code": "especially",
+      "country_code": "GR"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1990-06-04T15:27:43.605690",
+        "ip_address": "166.167.149.235",
+        "user_agent": "sell"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1977-09-21T03:54:22.511982",
+        "ip_address": "13.43.221.251",
+        "user_agent": "network"
+      }
+    ],
+    "created_at": "1993-05-22T23:46:08.850158",
+    "last_login_at": "1972-01-20T08:21:11.363874",
+    "deleted_at": "2012-03-27T05:10:54.639051"
+  },
+  {
+    "customer_id": "ad080785-eaae-4640-8e5c-adde5fd5a3d5",
+    "email": "jane67@example.com",
+    "first_name": "ninziZMxPsioiIIoCIGpIfBqMzGIgFZQQUyJsiJikKFiZlEODdjwTWSKUTqRZEMujKtXndkVD",
+    "last_name": "HBEhVVPNirhNLOSJxvBMfATYkpuHmjS",
+    "phone_number": null,
+    "date_of_birth": "1948-11-02",
+    "profile_picture_url": "http://www.tran-smith.com/tagsfaq.php",
+    "locale": "en_US",
+    "tier": "gold",
+    "lifetime_order_count": 1817852303,
+    "lifetime_spend": 36238798679118.66,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "out",
+      "city": "member",
+      "postal_code": "care",
+      "country_code": "GE"
+    },
+    "consent_records": [
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1989-03-30T02:43:34.169356",
+        "ip_address": "97.102.230.200",
+        "user_agent": "actually"
+      },
+      {
+        "purpose": "marketing",
+        "consented": false,
+        "recorded_at": "1989-06-09T20:24:56.004296",
+        "ip_address": "184.78.189.154",
+        "user_agent": "consider"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1972-08-16T15:07:12.280687",
+        "ip_address": "222.234.111.220",
+        "user_agent": "item"
+      }
+    ],
+    "created_at": "2022-02-24T23:32:46.514449",
+    "last_login_at": "1995-06-01T07:51:03.785975",
+    "deleted_at": "1995-11-30T14:21:26.562504"
+  },
+  {
+    "customer_id": "a99bfb55-5095-4a9a-aa52-a29062da3fe1",
+    "email": "scottpamela@example.com",
+    "first_name": "bvjVyruLjNPpLiLunefMiOxGYWuGUDvavWPWsZHYZarJDOJSrzOjLwOLiodafJqidAfiyANDiB",
+    "last_name": "NZZRc",
+    "phone_number": "+1162004191532",
+    "date_of_birth": "1996-12-03",
+    "profile_picture_url": "http://www.benson-franklin.com/app/blogcategory.php",
+    "locale": "es_ES",
+    "tier": "gold",
+    "lifetime_order_count": 1724855847,
+    "lifetime_spend": 21549224613426.555,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "move",
+      "city": "PM",
+      "postal_code": "as",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1978-08-10T03:04:25.804664",
+        "ip_address": "94.146.104.245",
+        "user_agent": "might"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1982-11-11T22:44:57.690814",
+        "ip_address": "144.199.36.190",
+        "user_agent": "guy"
+      }
+    ],
+    "created_at": "1992-11-02T22:43:07.932379",
+    "last_login_at": "1998-06-05T23:09:03.791056",
+    "deleted_at": "1970-10-09T20:48:16.239535"
+  },
+  {
+    "customer_id": "85de70a2-2598-49ff-85f5-1e93622132db",
+    "email": "christopher34@example.org",
+    "first_name": null,
+    "last_name": "x",
+    "phone_number": null,
+    "date_of_birth": "1936-08-19",
+    "profile_picture_url": "http://www.smith-bush.com/wp-content/listregister.html",
+    "locale": "nl_NL",
+    "tier": "bronze",
+    "lifetime_order_count": 1903209692,
+    "lifetime_spend": 29152212660940.6,
+    "is_email_verified": true,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "seven",
+      "city": "should",
+      "postal_code": "democratic",
+      "country_code": "UC"
+    },
+    "consent_records": [
+      {
+        "purpose": "profiling",
+        "consented": true,
+        "recorded_at": "2021-04-14T14:35:39.205754",
+        "ip_address": "217.38.161.92",
+        "user_agent": "plant"
+      }
+    ],
+    "created_at": "1975-08-26T02:22:38.683399",
+    "last_login_at": "1979-10-22T21:45:37.093807",
+    "deleted_at": "1988-08-09T02:48:58.297330"
+  },
+  {
+    "customer_id": "238459be-ae72-4898-9de5-f17cb3193dea",
+    "email": "brandijohnson@example.org",
+    "first_name": null,
+    "last_name": "sXdzhWxhObTpSbCmfzRemItTxTocFWILpLNJmQSUzuBDluYMQcfXaDwY",
+    "phone_number": "+412529430",
+    "date_of_birth": "2004-03-19",
+    "profile_picture_url": "https://www.watkins.com/tag/categories/blogpost.htm",
+    "locale": null,
+    "tier": "bronze",
+    "lifetime_order_count": 1851230770,
+    "lifetime_spend": 40526324110627.766,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "talk",
+      "city": "prevent",
+      "postal_code": "fill",
+      "country_code": "LK"
+    },
+    "consent_records": null,
+    "created_at": "1983-06-03T22:24:30.522370",
+    "last_login_at": "2000-06-27T18:41:04.135968",
+    "deleted_at": "1986-08-25T08:00:29.397747"
+  },
+  {
+    "customer_id": "08cad13a-c79a-46cb-9f71-2dd4ea8c374c",
+    "email": "deleonchristian@example.net",
+    "first_name": "TVnoTaMzuDJqYadOnvvioslNNfzdjCnzAHKOrJruiGMPbWtLTraEbDdqnQfNRDwcKnsLursCJSYUU",
+    "last_name": "mqzttUnTuiW",
+    "phone_number": "+4250301956600",
+    "date_of_birth": "1958-05-18",
+    "profile_picture_url": "https://www.smith.net/main/tags/categorylogin.html",
+    "locale": "nl_NL",
+    "tier": "gold",
+    "lifetime_order_count": 1303332649,
+    "lifetime_spend": 46800295699815.74,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "fear",
+      "city": "arm",
+      "postal_code": "personal",
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1996-05-26T19:16:50.985145",
+        "ip_address": "40.15.238.16",
+        "user_agent": "letter"
+      },
+      {
+        "purpose": "marketing",
+        "consented": true,
+        "recorded_at": "2015-10-09T21:15:33.224252",
+        "ip_address": "115.212.212.96",
+        "user_agent": "glass"
+      }
+    ],
+    "created_at": "1997-08-25T06:37:08.790263",
+    "last_login_at": "2023-03-18T10:06:36.040152",
+    "deleted_at": null
+  },
+  {
+    "customer_id": "e3766320-5bc3-4911-8265-e015a61a576f",
+    "email": "webstershari@example.com",
+    "first_name": null,
+    "last_name": "vPPcXtSTrmDTPDNBHdMbcaaIyEFGEqWGDIxCdSBqrLfPjJTQgJcriGwD",
+    "phone_number": "+88641792199931",
+    "date_of_birth": "1987-03-07",
+    "profile_picture_url": "http://villanueva.org/blog/searchindex.html",
+    "locale": "pt_BR",
+    "tier": "gold",
+    "lifetime_order_count": 923410764,
+    "lifetime_spend": 41627380999512.164,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": "in",
+      "city": "during",
+      "postal_code": "manage",
+      "country_code": "FL"
+    },
+    "consent_records": [],
+    "created_at": "1991-10-21T18:37:46.448239",
+    "last_login_at": "2008-04-04T02:53:36.174337",
+    "deleted_at": "1993-06-09T23:30:20.377516"
+  },
+  {
+    "customer_id": "3dfc7930-26ec-412d-8817-c7ba161c5404",
+    "email": "waltersjohn@example.com",
+    "first_name": "YjflotPyLFMMBjUlGlslmESkRNiRRLJxAxVIkBRKPbLhzRZIDAEArKehVKmAyEDXYeIlVTVshhJzHzYeVEbe",
+    "last_name": "yYrMKHMHgoGaiLakWvrC",
+    "phone_number": "+105329067",
+    "date_of_birth": "1954-05-07",
+    "profile_picture_url": null,
+    "locale": "fr_FR",
+    "tier": "bronze",
+    "lifetime_order_count": 181055148,
+    "lifetime_spend": 19866621797239.805,
+    "is_email_verified": true,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "thousand",
+      "postal_code": "beat",
+      "country_code": "KB"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2022-12-23T13:42:04.350073",
+        "ip_address": null,
+        "user_agent": "edge"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "1984-06-21T08:05:00.429466",
+        "ip_address": "61.173.222.225",
+        "user_agent": null
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "2010-02-01T15:15:40.628930",
+        "ip_address": "166.12.38.251",
+        "user_agent": "whether"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "2010-02-21T13:16:58.651255",
+        "ip_address": "158.245.24.22",
+        "user_agent": "month"
+      },
+      {
+        "purpose": "analytics",
+        "consented": true,
+        "recorded_at": "2001-10-31T15:49:33.185923",
+        "ip_address": "171.155.228.236",
+        "user_agent": "gas"
+      }
+    ],
+    "created_at": "2013-10-01T14:30:32.269046",
+    "last_login_at": "2011-01-11T11:19:45.957643",
+    "deleted_at": "1970-10-27T17:16:50.831199"
+  },
+  {
+    "customer_id": "5415ce72-76b8-4e2f-933b-006840bef050",
+    "email": "qharris@example.org",
+    "first_name": "CZn",
+    "last_name": "SIzMVZfmWVnljBLknMAcnHHTUMKaJpICBEKkiuPBkGjYZhOvljOldRWXvfYtDItVUTHTapVqBgeYjnSmAbBoiY",
+    "phone_number": "+535765200",
+    "date_of_birth": "1933-05-17",
+    "profile_picture_url": "http://smith-dorsey.net/categories/category/tagcategory.html",
+    "locale": "en_US",
+    "tier": "platinum",
+    "lifetime_order_count": 169020595,
+    "lifetime_spend": 58345276722729.24,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1989-06-28T14:03:46.158164",
+        "ip_address": "197.77.212.250",
+        "user_agent": "official"
+      }
+    ],
+    "created_at": "1986-01-05T21:15:56.698042",
+    "last_login_at": "1995-05-28T13:35:23.057339",
+    "deleted_at": "1977-02-28T14:06:58.737639"
+  },
+  {
+    "customer_id": "9cf93531-bb47-4804-ad45-c9c58ae5d71a",
+    "email": "stonejudy@example.com",
+    "first_name": "VlkRenBDPEDONRtO",
+    "last_name": "LdEUyGeZorUCCdVCiqxVsPsoLskTPzJmfPnCgilLqRujRk",
+    "phone_number": "+474675873",
+    "date_of_birth": "1934-05-04",
+    "profile_picture_url": "https://www.murphy-mckenzie.com/taglogin.html",
+    "locale": "pt_BR",
+    "tier": "silver",
+    "lifetime_order_count": 41940544,
+    "lifetime_spend": 64495386101983.43,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": "big",
+      "city": "public",
+      "postal_code": "prepare",
+      "country_code": "FV"
+    },
+    "consent_records": null,
+    "created_at": "1978-09-24T14:14:49.134416",
+    "last_login_at": "2008-03-01T15:51:08.874965",
+    "deleted_at": "2016-01-14T09:49:34.979174"
+  },
+  {
+    "customer_id": "852995e6-d082-4a6a-88cf-6359c487b359",
+    "email": "keylisa@example.com",
+    "first_name": "OoUHHqcHDdsGxZDEreuSZsWwHtiiykLkXOGtqmbJbSzbtTANPIuYBaCmpWenJDjjHXzunjzQs",
+    "last_name": "myATQAqGVDXxVPaOUlaBrXnQdNwrmGyEvfrSNQEImXXgOubrcObeJLFQxeCRXvFTyGkIpJewXCteBauSXnDjuyNrNOU",
+    "phone_number": "+330374415",
+    "date_of_birth": "2003-11-16",
+    "profile_picture_url": "http://knox-smith.com/wp-content/categories/tagprivacy.php",
+    "locale": "nl_NL",
+    "tier": "gold",
+    "lifetime_order_count": 465470910,
+    "lifetime_spend": 46651298812734.445,
+    "is_email_verified": false,
+    "is_marketing_opt_in": true,
+    "primary_address": {
+      "line1": null,
+      "city": null,
+      "postal_code": null,
+      "country_code": null
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1997-10-12T10:45:18.398973",
+        "ip_address": "25.185.175.57",
+        "user_agent": "citizen"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1996-08-04T02:37:57.483326",
+        "ip_address": "21.73.23.188",
+        "user_agent": "the"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": true,
+        "recorded_at": "1993-04-06T07:31:27.368415",
+        "ip_address": null,
+        "user_agent": "early"
+      },
+      {
+        "purpose": "profiling",
+        "consented": false,
+        "recorded_at": "1973-06-08T12:08:07.679649",
+        "ip_address": "50.5.202.253",
+        "user_agent": "identify"
+      },
+      {
+        "purpose": "analytics",
+        "consented": false,
+        "recorded_at": "2024-01-09T22:19:03.428617",
+        "ip_address": "47.73.222.26",
+        "user_agent": "animal"
+      }
+    ],
+    "created_at": "1974-01-23T00:13:15.991020",
+    "last_login_at": "2013-01-09T21:34:25.449674",
+    "deleted_at": "2005-04-25T08:49:07.455562"
+  },
+  {
+    "customer_id": "0b273b0e-d896-4780-ae9b-e278f3a8c12e",
+    "email": "vfox@example.org",
+    "first_name": null,
+    "last_name": "eIyTpnAmIEPAfIWQxOmvTFzOfiqiBfQZwQvXYJW",
+    "phone_number": "+13498159466",
+    "date_of_birth": "1970-11-02",
+    "profile_picture_url": "http://pearson-bray.info/categories/blogauthor.htm",
+    "locale": "fr_FR",
+    "tier": "bronze",
+    "lifetime_order_count": 22888400,
+    "lifetime_spend": 37647227997533.086,
+    "is_email_verified": false,
+    "is_marketing_opt_in": false,
+    "primary_address": {
+      "line1": null,
+      "city": "detail",
+      "postal_code": "law",
+      "country_code": "QS"
+    },
+    "consent_records": [
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "2000-12-18T17:03:47.896423",
+        "ip_address": "220.143.56.228",
+        "user_agent": "Republican"
+      },
+      {
+        "purpose": "third_party_sharing",
+        "consented": false,
+        "recorded_at": "1993-06-20T19:59:15.518113",
+        "ip_address": "167.10.157.104",
+        "user_agent": "establish"
+      }
+    ],
+    "created_at": "1999-01-24T19:07:41.601606",
+    "last_login_at": "2008-01-30T04:18:52.043731",
+    "deleted_at": null
+  }
+]
