@@ -2,10 +2,11 @@
 name = "datacontract-faker"
 version = "0.1.0"
 description = "Generate high-quality synthetic data from ODCS data contracts"
-authors = ["Your Name <you@example.com>"]
+authors = ["MickaelBZH"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/your-org/datacontract-faker"
+repository = "https://github.com/MickaelBZH/data-contract-faker"
+homepage = "https://github.com/MickaelBZH/data-contract-faker"
 keywords = ["data-contract", "synthetic-data", "faker", "odcs", "data-engineering"]
 classifiers = [
     "Development Status :: 3 - Alpha",
